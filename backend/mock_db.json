@@ -1,0 +1,2542 @@
+{
+  "equipment": [
+    {
+      "name": "Lathe Machine",
+      "branch": "mechanical",
+      "year": 1,
+      "semester": 2,
+      "definition": "A lathe is a machine tool that rotates a workpiece about an axis of rotation to perform various operations such as cutting, sanding, drilling, or deformation.",
+      "working_principle": "The workpiece is held in a chuck and rotated while a cutting tool is fed into the work causing the cutting action. The tool can move parallel or perpendicular to the axis of rotation.",
+      "main_parts": [
+        "Headstock",
+        "Tailstock",
+        "Bed",
+        "Carriage",
+        "Chuck",
+        "Lead Screw",
+        "Feed Rod",
+        "Apron"
+      ],
+      "applications": [
+        "Turning cylindrical parts",
+        "Facing operations",
+        "Thread cutting",
+        "Drilling",
+        "Boring",
+        "Knurling"
+      ],
+      "exam_notes": "Remember: Lathe is the mother of all machine tools. Types: Engine lathe, Turret lathe, Special purpose lathe. Cutting speed formula: V = \u03c0DN/1000 m/min",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "f612301b-c97f-4ec1-8b7d-dc264ef896c3",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5f9f"
+    },
+    {
+      "name": "Milling Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 3,
+      "definition": "A milling machine is a machine tool used for shaping solid materials by removing material from a workpiece using a rotating multi-point cutter.",
+      "working_principle": "The cutter rotates at high speed and the workpiece is fed against it. Material is removed in the form of small chips. Can perform face milling and peripheral milling.",
+      "main_parts": [
+        "Base",
+        "Column",
+        "Knee",
+        "Saddle",
+        "Table",
+        "Spindle",
+        "Arbor",
+        "Overhanging Arm",
+        "Ram"
+      ],
+      "applications": [
+        "Flat surface machining",
+        "Slot cutting",
+        "Gear cutting",
+        "Complex contour machining",
+        "Drilling and boring"
+      ],
+      "exam_notes": "Types: Horizontal, Vertical, Universal. Remember indexing methods: Simple, Compound, Differential. Up milling vs Down milling: chip thickness, surface finish, tool life differences.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "8077ca62-8382-438d-b83f-3088eacd62c9",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa0"
+    },
+    {
+      "name": "Drilling Machine",
+      "branch": "mechanical",
+      "year": 1,
+      "semester": 2,
+      "definition": "A drilling machine is used to make cylindrical holes in workpieces using a rotating cutting tool called drill bit.",
+      "working_principle": "A rotating drill bit is pressed against the workpiece with sufficient force to cut material and create a hole. Coolant is often used to reduce heat.",
+      "main_parts": [
+        "Base",
+        "Column",
+        "Drill Head",
+        "Spindle",
+        "Chuck",
+        "Feed Mechanism",
+        "Table",
+        "Motor"
+      ],
+      "applications": [
+        "Making holes in metal and wood",
+        "Reaming",
+        "Tapping",
+        "Boring",
+        "Counter boring",
+        "Spot facing"
+      ],
+      "exam_notes": "Types: Portable, Sensitive, Upright, Radial, Gang, Multiple spindle. Drill nomenclature: Point angle 118\u00b0, Helix angle 20-35\u00b0. Drill materials: HSS, Carbide.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "d9ca293f-ca1c-4327-99da-e87f14414e69",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa1"
+    },
+    {
+      "name": "Grinding Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A grinding machine uses an abrasive wheel as cutting tool to remove small amounts of material from workpiece for finishing operations.",
+      "working_principle": "An abrasive grinding wheel rotates at high speed. The workpiece is brought into contact with the wheel which removes material through abrasion.",
+      "main_parts": [
+        "Wheel Head",
+        "Grinding Wheel",
+        "Work Table",
+        "Wheel Guard",
+        "Coolant System",
+        "Feed Mechanism",
+        "Base"
+      ],
+      "applications": [
+        "Surface finishing",
+        "Precision grinding",
+        "Tool sharpening",
+        "Cylindrical grinding",
+        "Internal grinding"
+      ],
+      "exam_notes": "Types: Surface, Cylindrical, Centerless, Tool and cutter. Wheel designation: Abrasive-Grain size-Grade-Structure-Bond. Dressing and truing operations.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "86062b23-83ac-4cbf-84ef-a0a36ae8dea3",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa2"
+    },
+    {
+      "name": "Shaper Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 3,
+      "definition": "A shaper is a machine tool that uses a single-point cutting tool attached to a reciprocating ram to machine flat surfaces, grooves, and slots.",
+      "working_principle": "The ram holding the cutting tool reciprocates over the workpiece. Cutting occurs during forward stroke, return stroke is idle. Workpiece is fed perpendicular to cutting direction.",
+      "main_parts": [
+        "Base",
+        "Ram",
+        "Tool Head",
+        "Table",
+        "Clapper Box",
+        "Crossrail",
+        "Column",
+        "Drive Mechanism"
+      ],
+      "applications": [
+        "Machining flat surfaces",
+        "Keyway cutting",
+        "Slot making",
+        "Angular surface machining",
+        "Internal surfaces"
+      ],
+      "exam_notes": "Types: Horizontal, Vertical, Travelling head. Quick return mechanism: Whitworth, Crank and slotted lever. Cutting stroke slower than return stroke.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "9bcfb791-fa6d-4c88-913f-8b1a7e86c99d",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa3"
+    },
+    {
+      "name": "CNC Machine",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 5,
+      "definition": "Computer Numerical Control (CNC) machines are automated machine tools controlled by precisely programmed commands encoded on a storage medium.",
+      "working_principle": "A computer controls the motion of cutting tools and workpiece based on programmed instructions (G-codes and M-codes), enabling high precision and repeatability.",
+      "main_parts": [
+        "Controller",
+        "Machine Tool",
+        "Servo Motors",
+        "Spindle",
+        "Tool Magazine",
+        "Feedback System",
+        "Input Device"
+      ],
+      "applications": [
+        "Complex 3D machining",
+        "Mass production",
+        "Prototype development",
+        "High precision parts",
+        "Aerospace components"
+      ],
+      "exam_notes": "Programming: G-codes (geometric), M-codes (machine). Types: CNC Lathe, Mill, Router. Advantages: Precision, repeatability, complex shapes. APT language.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "2178e44b-cf72-4ae9-8c5c-f896d8e5834d",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa4"
+    },
+    {
+      "name": "Welding Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 4,
+      "definition": "Welding machines provide the necessary heat and electrical current to join metal parts by melting and fusing them together.",
+      "working_principle": "Electric arc or gas flame generates intense heat that melts the base metal and filler material, which solidify to form a strong joint.",
+      "main_parts": [
+        "Power Source",
+        "Electrode Holder",
+        "Ground Clamp",
+        "Welding Cables",
+        "Cooling System",
+        "Control Panel"
+      ],
+      "applications": [
+        "Metal fabrication",
+        "Construction",
+        "Automotive repair",
+        "Pipeline welding",
+        "Ship building"
+      ],
+      "exam_notes": "Types: Arc (MIG, TIG, Stick), Gas (Oxy-acetylene), Resistance (Spot, Seam). Welding positions: Flat, Horizontal, Vertical, Overhead. Defects: Porosity, Undercut, Slag inclusion.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "beeab912-8eba-48ad-af82-3473e73bba6d",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa5"
+    },
+    {
+      "name": "Power Hacksaw",
+      "branch": "mechanical",
+      "year": 1,
+      "semester": 1,
+      "definition": "A power hacksaw is a metal cutting machine that uses a reciprocating blade to cut metal workpieces to desired lengths.",
+      "working_principle": "A toothed blade reciprocates rapidly while the workpiece is fed slowly into it. Cutting occurs on the forward stroke with automatic return.",
+      "main_parts": [
+        "Frame",
+        "Blade",
+        "Vise",
+        "Feed Mechanism",
+        "Motor",
+        "Coolant System",
+        "Drive Mechanism"
+      ],
+      "applications": [
+        "Cutting metal bars",
+        "Stock preparation",
+        "Workshop cutting",
+        "Rough cutting operations"
+      ],
+      "exam_notes": "Blade specifications: TPI (teeth per inch), material (HSS, Bimetal). Cutting speed depends on material hardness. Feed rate control important.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "67480b9a-3a9e-483d-baf4-b3ba12936a2c",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa6"
+    },
+    {
+      "name": "Planer Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A planer is a large machine tool used to produce horizontal, vertical, or inclined flat surfaces by moving the workpiece against a stationary cutting tool.",
+      "working_principle": "The workpiece is mounted on a reciprocating table that moves back and forth under stationary cutting tools. Multiple tools can work simultaneously.",
+      "main_parts": [
+        "Bed",
+        "Table",
+        "Housing",
+        "Cross Rail",
+        "Tool Head",
+        "Driving Mechanism",
+        "Feed Mechanism"
+      ],
+      "applications": [
+        "Large surface machining",
+        "Keyway cutting on large shafts",
+        "T-slot machining",
+        "Angular surface generation"
+      ],
+      "exam_notes": "Difference from Shaper: In planer, workpiece moves (tool stationary); in shaper, tool moves (workpiece stationary). Planer for larger workpieces.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "0414c46d-5d7e-48e6-91fb-cddf10048bf9",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa7"
+    },
+    {
+      "name": "Boring Machine",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 5,
+      "definition": "A boring machine enlarges and finishes existing holes to precise dimensions and accurate alignment using a single-point cutting tool.",
+      "working_principle": "A rotating boring bar with cutting tool is fed into a pre-existing hole to enlarge and finish it to required size and surface finish.",
+      "main_parts": [
+        "Column",
+        "Spindle",
+        "Boring Bar",
+        "Table",
+        "Saddle",
+        "Feed Mechanism",
+        "Headstock"
+      ],
+      "applications": [
+        "Enlarging drilled holes",
+        "Precision hole finishing",
+        "Internal surface machining",
+        "Cylinder boring",
+        "Bearing housing machining"
+      ],
+      "exam_notes": "Types: Horizontal, Vertical, Jig boring. More accurate than drilling. Used when precision holes >25mm diameter needed. Boring bar rigidity critical.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "18ed5a56-864e-4efe-b0a1-519c3686d73b",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa8"
+    },
+    {
+      "name": "Hydraulic Press",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 6,
+      "definition": "A hydraulic press uses hydraulic pressure to compress, bend, or shape materials using Pascal's principle of fluid pressure transmission.",
+      "working_principle": "Hydraulic fluid under pressure acts on a piston creating large compressive force. Force multiplication achieved through different piston areas (F2/F1 = A2/A1).",
+      "main_parts": [
+        "Hydraulic Cylinder",
+        "Piston",
+        "Pump",
+        "Reservoir",
+        "Control Valves",
+        "Press Bed",
+        "Frame",
+        "Pressure Gauge"
+      ],
+      "applications": [
+        "Metal forming",
+        "Deep drawing",
+        "Forging",
+        "Powder compaction",
+        "Automotive body panel forming"
+      ],
+      "exam_notes": "Pascal's Law: P=F/A. Mechanical advantage = A2/A1. Types: H-frame, C-frame, 4-column. Tonnage capacity varies. Safety: pressure relief valves essential.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "3008bd63-2d6a-427c-b22c-49441983798e",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fa9"
+    },
+    {
+      "name": "EDM Machine",
+      "branch": "mechanical",
+      "year": 4,
+      "semester": 7,
+      "definition": "Electrical Discharge Machining (EDM) removes material through electrical sparks between the electrode and workpiece in a dielectric fluid.",
+      "working_principle": "Rapid recurring electrical discharges create sparks that melt and vaporize tiny particles from the workpiece surface. No mechanical contact required.",
+      "main_parts": [
+        "Power Supply",
+        "Electrode",
+        "Workpiece",
+        "Dielectric Tank",
+        "Servo Control",
+        "Flushing System",
+        "Spark Gap"
+      ],
+      "applications": [
+        "Hard material machining",
+        "Complex cavity creation",
+        "Die and mold making",
+        "Micro-hole drilling",
+        "Surface hardening"
+      ],
+      "exam_notes": "Types: Die-sinking EDM, Wire EDM. Materials: Must be electrically conductive. Dielectric fluid: Kerosene, deionized water. No tool wear for hard materials.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "0bea0fb0-b847-4fa7-82ca-2cbc81219113",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5faa"
+    },
+    {
+      "name": "Broaching Machine",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 6,
+      "definition": "A broaching machine uses a multi-toothed cutting tool (broach) to remove material in a single linear pass to create precise internal or external surfaces.",
+      "working_principle": "A broach with successively larger teeth is pulled or pushed through/over the workpiece, each tooth removing a small layer of material.",
+      "main_parts": [
+        "Broach Tool",
+        "Drive Mechanism",
+        "Worktable",
+        "Broach Holder",
+        "Hydraulic System",
+        "Control Panel"
+      ],
+      "applications": [
+        "Keyway cutting",
+        "Spline cutting",
+        "Internal gear cutting",
+        "Irregular hole shaping",
+        "Surface finishing"
+      ],
+      "exam_notes": "Types: Internal, External, Surface. Advantages: High accuracy, good surface finish, high production rate. Each broach limited to one size/shape.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "5e7f1404-44b7-4ca4-9cf6-e0f9af2340e9",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fab"
+    },
+    {
+      "name": "Slotting Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A slotting machine is a vertical shaper used to cut slots, keyways, and internal surfaces using a reciprocating single-point cutting tool.",
+      "working_principle": "The ram moves vertically in a reciprocating motion. The cutting tool moves downward for cutting stroke and returns upward as idle stroke.",
+      "main_parts": [
+        "Base",
+        "Column",
+        "Ram",
+        "Rotary Table",
+        "Tool Head",
+        "Feed Mechanism",
+        "Drive System"
+      ],
+      "applications": [
+        "Internal keyway cutting",
+        "Spline cutting",
+        "Internal gear cutting",
+        "Slots in blind holes",
+        "Internal surface machining"
+      ],
+      "exam_notes": "Also called vertical shaper. Quick return mechanism similar to shaper. Rotary table allows circular work. Used where planer/shaper cannot reach.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "78491b6e-f816-474b-9220-d83bf313d1f0",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fac"
+    },
+    {
+      "name": "Hobbing Machine",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 6,
+      "definition": "A gear hobbing machine cuts gears and splines by rotating the workpiece and the hob (cutting tool) in synchronized motion.",
+      "working_principle": "The hob (cylindrical gear-shaped cutter) and blank rotate continuously with precise speed ratio. The hob is gradually fed across the blank face to generate gear teeth.",
+      "main_parts": [
+        "Hob Spindle",
+        "Work Spindle",
+        "Column",
+        "Base",
+        "Feed Mechanism",
+        "Change Gears",
+        "Coolant System"
+      ],
+      "applications": [
+        "Spur gear cutting",
+        "Helical gear cutting",
+        "Worm gear production",
+        "Spline cutting",
+        "Sprocket manufacturing"
+      ],
+      "exam_notes": "Hobbing is a continuous indexing process. Speed ratio = Teeth on gear/Starts on hob. Can produce multiple teeth simultaneously. Most economical for quantity production.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "a541e4c0-3134-4056-a951-0fb4a823218b",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fad"
+    },
+    {
+      "name": "3D Printer (Additive Manufacturing)",
+      "branch": "mechanical",
+      "year": 4,
+      "semester": 8,
+      "definition": "A 3D printer creates three-dimensional objects by depositing material layer-by-layer based on digital CAD models.",
+      "working_principle": "Material (plastic, metal, resin) is deposited, sintered, or solidified layer by layer following computer-controlled paths to build the final 3D object.",
+      "main_parts": [
+        "Print Head/Extruder",
+        "Build Platform",
+        "Motion System (XYZ)",
+        "Controller",
+        "Material Feed",
+        "Heating Element",
+        "Cooling Fan"
+      ],
+      "applications": [
+        "Rapid prototyping",
+        "Custom part manufacturing",
+        "Medical implants",
+        "Aerospace components",
+        "Tooling and jigs"
+      ],
+      "exam_notes": "Technologies: FDM (Fused Deposition), SLA (Stereolithography), SLS (Selective Laser Sintering), DMLS (Direct Metal Laser Sintering). Materials: PLA, ABS, Nylon, Metals.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "d6fcf422-9129-4645-a2bd-d907816f8139",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fae"
+    },
+    {
+      "name": "Sand Blasting Machine",
+      "branch": "mechanical",
+      "year": 2,
+      "semester": 3,
+      "definition": "A sand blasting machine propels abrasive materials against a surface under high pressure to clean, etch, or finish the surface.",
+      "working_principle": "Compressed air accelerates abrasive media through a nozzle onto the workpiece surface, removing contaminants, rust, or creating surface texture.",
+      "main_parts": [
+        "Blast Cabinet",
+        "Air Compressor",
+        "Abrasive Media",
+        "Blast Nozzle",
+        "Dust Collector",
+        "Pressure Vessel",
+        "Control System"
+      ],
+      "applications": [
+        "Surface cleaning",
+        "Paint removal",
+        "Rust removal",
+        "Surface preparation for coating",
+        "Deburring",
+        "Surface texturing"
+      ],
+      "exam_notes": "Abrasives: Sand, glass beads, steel grit, aluminum oxide. Pressure: 60-125 PSI. Safety: Dust hazard, wear protective gear. Wet blasting reduces dust.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "e7f6b9b5-4836-4a03-b1c1-717e0a402982",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5faf"
+    },
+    {
+      "name": "Forging Hammer",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 5,
+      "definition": "A forging hammer shapes metal by repeated impact blows, compressing and forming the material while hot.",
+      "working_principle": "A heavy hammer (ram) is repeatedly raised and dropped onto the heated workpiece placed on an anvil, deforming it into desired shape.",
+      "main_parts": [
+        "Anvil",
+        "Ram/Hammer",
+        "Frame",
+        "Lifting Mechanism",
+        "Control System",
+        "Foundation",
+        "Dies"
+      ],
+      "applications": [
+        "Open die forging",
+        "Closed die forging",
+        "Drop forging",
+        "Automotive parts",
+        "Hand tools manufacturing"
+      ],
+      "exam_notes": "Types: Power hammer (steam, hydraulic, pneumatic), Drop hammer. Forging temperature: Steel 1200\u00b0C. Grain structure improved. Compare with press forging.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "0888c8ad-cde7-4d58-9e3f-3d633c1535c1",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb0"
+    },
+    {
+      "name": "Rolling Mill",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 5,
+      "definition": "A rolling mill shapes metal by passing it between rotating rolls that compress and elongate the material.",
+      "working_principle": "Metal is fed between two or more rotating rolls. The gap between rolls determines final thickness. Material is elongated and reduced in cross-section.",
+      "main_parts": [
+        "Rolls",
+        "Housing",
+        "Drive Motor",
+        "Gear System",
+        "Roll Adjustment Mechanism",
+        "Entry and Exit Guides"
+      ],
+      "applications": [
+        "Sheet metal production",
+        "Plate rolling",
+        "Structural shapes",
+        "Rail production",
+        "Wire and rod manufacturing"
+      ],
+      "exam_notes": "Types: Two-high, Three-high, Four-high, Cluster mill. Hot rolling (>recrystallization temp), Cold rolling (<recrystallization). Reduction ratio, draft calculation.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "0c092d38-33c2-4169-9eb6-e615218240f0",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb1"
+    },
+    {
+      "name": "Heat Treatment Furnace",
+      "branch": "mechanical",
+      "year": 3,
+      "semester": 6,
+      "definition": "Heat treatment furnaces heat metals to specific temperatures and cool them in controlled manner to alter their microstructure and properties.",
+      "working_principle": "Controlled heating to specific temperature, holding (soaking), and cooling at predetermined rates to achieve desired mechanical properties like hardness, strength, ductility.",
+      "main_parts": [
+        "Heating Chamber",
+        "Heating Elements",
+        "Temperature Controller",
+        "Atmosphere Control",
+        "Insulation",
+        "Quenching Tank",
+        "Thermocouples"
+      ],
+      "applications": [
+        "Annealing",
+        "Normalizing",
+        "Hardening",
+        "Tempering",
+        "Case hardening",
+        "Stress relieving"
+      ],
+      "exam_notes": "Processes: Annealing (soft), Normalizing (refine grain), Hardening (increase hardness), Tempering (reduce brittleness). TTT diagrams, CCT curves. Martensite, Pearlite, Bainite structures.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "04cdf6c0-2ce2-4e51-8f56-09c313300084",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb2"
+    },
+    {
+      "name": "Ultrasonic Machining",
+      "branch": "mechanical",
+      "year": 4,
+      "semester": 7,
+      "definition": "Ultrasonic machining removes material using abrasive particles driven by ultrasonic vibrations of a tool against the workpiece.",
+      "working_principle": "A tool vibrates at ultrasonic frequency (20kHz) with small amplitude. Abrasive slurry between tool and workpiece causes material removal through impact.",
+      "main_parts": [
+        "Ultrasonic Generator",
+        "Transducer",
+        "Horn (Concentrator)",
+        "Tool",
+        "Abrasive Slurry",
+        "Workpiece Holder"
+      ],
+      "applications": [
+        "Machining brittle materials",
+        "Glass machining",
+        "Ceramic machining",
+        "Semiconductor processing",
+        "Micro-hole drilling"
+      ],
+      "exam_notes": "Non-traditional machining. Works on hard brittle materials. No thermal or chemical damage. MRR low. Abrasives: Boron carbide, silicon carbide, aluminum oxide.",
+      "image_url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "id": "5a8ac05e-d790-438a-9938-1dd1642cedfb",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb3"
+    },
+    {
+      "name": "Transformer",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 3,
+      "definition": "A transformer is a static electrical device that transfers electrical energy between two or more circuits through electromagnetic induction.",
+      "working_principle": "Based on Faraday's law of electromagnetic induction. When AC flows through primary winding, it creates changing magnetic flux in the core which induces voltage in secondary winding.",
+      "main_parts": [
+        "Core (Laminated Silicon Steel)",
+        "Primary Winding",
+        "Secondary Winding",
+        "Tank",
+        "Conservator",
+        "Breather",
+        "Bushings",
+        "Cooling System",
+        "Buchholz Relay"
+      ],
+      "applications": [
+        "Step-up/Step-down voltage",
+        "Power transmission",
+        "Distribution networks",
+        "Isolation",
+        "Impedance matching",
+        "Instrumentation"
+      ],
+      "exam_notes": "Transformation ratio: V2/V1 = N2/N1 = I1/I2. Losses: Core losses (Hysteresis + Eddy current) and Copper losses (I\u00b2R). Efficiency typically 95-99%. Tests: OC test, SC test.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "5af3a7e9-60d2-48a3-b51f-c9baff5157d5",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb4"
+    },
+    {
+      "name": "DC Motor",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A DC motor is an electrical machine that converts direct current electrical energy into mechanical energy through the interaction of magnetic fields.",
+      "working_principle": "When current-carrying conductor is placed in a magnetic field, it experiences a force (Fleming's Left Hand Rule). The commutator ensures continuous rotation by reversing current direction.",
+      "main_parts": [
+        "Stator (Field System)",
+        "Rotor (Armature)",
+        "Commutator",
+        "Brushes",
+        "Yoke",
+        "Field Windings",
+        "Shaft",
+        "Bearings",
+        "Pole Shoes"
+      ],
+      "applications": [
+        "Electric vehicles",
+        "Industrial drives",
+        "Cranes and hoists",
+        "Rolling mills",
+        "Elevators",
+        "Traction systems"
+      ],
+      "exam_notes": "Types: Series, Shunt, Compound motors. Back EMF: Eb = V - IaRa. Torque: T \u221d \u03a6Ia. Speed control: Flux control, Armature voltage control, Resistance control. Starting: 3-point, 4-point starter.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "c22738a3-49f9-4e47-92f9-da5bce9ca02b",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb5"
+    },
+    {
+      "name": "Alternator (AC Generator)",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 5,
+      "definition": "An alternator is a synchronous generator that converts mechanical energy into alternating current electrical energy using electromagnetic induction.",
+      "working_principle": "A rotating magnetic field (rotor) cuts stationary armature windings (stator), inducing AC voltage. Frequency determined by speed and number of poles: f = PN/120.",
+      "main_parts": [
+        "Rotor (Field Winding)",
+        "Stator (Armature Winding)",
+        "Exciter",
+        "Slip Rings",
+        "Cooling System",
+        "AVR (Automatic Voltage Regulator)",
+        "Prime Mover Coupling"
+      ],
+      "applications": [
+        "Power generation in power plants",
+        "Automotive alternators",
+        "Standby generators",
+        "Wind turbines",
+        "Hydroelectric plants"
+      ],
+      "exam_notes": "EMF equation: E = 4.44f\u03a6NKpKd. Types: Salient pole, Non-salient pole. Synchronous speed: Ns = 120f/P. Voltage regulation, Parallel operation, Hunting phenomenon.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "da3bc5fd-c64c-4d50-8fa2-1bf0635ef3e8",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb6"
+    },
+    {
+      "name": "Induction Motor",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 5,
+      "definition": "An induction motor is an AC motor where electric current in the rotor is induced by electromagnetic induction from the magnetic field of the stator winding.",
+      "working_principle": "Rotating magnetic field in stator induces current in rotor conductors. This current creates rotor magnetic field that interacts with stator field producing torque.",
+      "main_parts": [
+        "Stator Core",
+        "Stator Windings",
+        "Rotor (Squirrel Cage/Wound)",
+        "Shaft",
+        "Bearings",
+        "End Bells",
+        "Cooling Fan",
+        "Terminal Box"
+      ],
+      "applications": [
+        "Industrial drives",
+        "Pumps",
+        "Fans",
+        "Compressors",
+        "Conveyors",
+        "Machine tools",
+        "HVAC systems"
+      ],
+      "exam_notes": "Types: Squirrel cage, Slip ring. Slip: s = (Ns - N)/Ns. Torque-slip characteristics. Starting methods: DOL, Star-delta, Auto-transformer, Rotor resistance. Speed control: V/f, pole changing.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "16448ff2-be27-4006-850e-057964a0b2ca",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb7"
+    },
+    {
+      "name": "Circuit Breaker",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A circuit breaker is an automatically operated electrical switch designed to protect an electrical circuit from damage caused by overload or short circuit.",
+      "working_principle": "Detects fault conditions and interrupts current flow by separating contacts. Arc is quenched using various mediums (oil, air, SF6, vacuum).",
+      "main_parts": [
+        "Fixed Contact",
+        "Moving Contact",
+        "Arc Chute",
+        "Operating Mechanism",
+        "Trip Unit",
+        "Insulating Medium",
+        "Control Circuit"
+      ],
+      "applications": [
+        "Power system protection",
+        "Distribution networks",
+        "Industrial installations",
+        "Commercial buildings",
+        "Residential protection"
+      ],
+      "exam_notes": "Types by voltage: LV, MV, HV, EHV. By medium: Oil (Bulk, Minimum), Air blast, SF6, Vacuum. Arc quenching methods. Breaking capacity, Making capacity. Time-current characteristics.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "390741b4-80ba-47b1-a6f7-eb3b68122c95",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb8"
+    },
+    {
+      "name": "Relay",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 3,
+      "definition": "An electrical relay is an electromagnetic switch operated by a relatively small electric current that can turn on or off a much larger electric current.",
+      "working_principle": "When current flows through the coil, it creates a magnetic field that attracts the armature, closing or opening contacts to control another circuit.",
+      "main_parts": [
+        "Electromagnet Coil",
+        "Armature",
+        "Contacts (NO/NC)",
+        "Spring",
+        "Frame",
+        "Terminals"
+      ],
+      "applications": [
+        "Protection relays in power systems",
+        "Control circuits",
+        "Automation",
+        "Motor control",
+        "Overcurrent/undervoltage protection"
+      ],
+      "exam_notes": "Types: Electromagnetic, Thermal, Static (digital). Protection relays: Overcurrent, Differential, Distance, Directional. Pickup value, Reset value, Operating time. CT, PT for sensing.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "0c534a74-768b-45bf-9a76-d3d94784aba4",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fb9"
+    },
+    {
+      "name": "Battery Charger",
+      "branch": "electrical",
+      "year": 1,
+      "semester": 2,
+      "definition": "A battery charger is a device used to put energy into a secondary cell or rechargeable battery by forcing an electric current through it.",
+      "working_principle": "Converts AC to DC using rectifiers, regulates voltage and current to charge battery according to its chemistry and state of charge.",
+      "main_parts": [
+        "Transformer",
+        "Rectifier",
+        "Filter",
+        "Voltage Regulator",
+        "Current Limiter",
+        "Charging Controller",
+        "Meters"
+      ],
+      "applications": [
+        "Mobile device charging",
+        "Electric vehicle charging",
+        "UPS battery maintenance",
+        "Industrial battery charging",
+        "Solar battery charging"
+      ],
+      "exam_notes": "Charging methods: Constant current, Constant voltage, Taper charging, Pulse charging. C-rate (1C = battery capacity in 1 hour). Overcharging protection. Li-ion, Lead-acid characteristics.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "69e7aecc-ca99-48ae-a207-d6fa9086b9b2",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fba"
+    },
+    {
+      "name": "Inverter",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 6,
+      "definition": "An inverter is a power electronic device that converts direct current (DC) to alternating current (AC).",
+      "working_principle": "Uses electronic switches (IGBTs, MOSFETs) operated by control circuits to convert DC to AC. PWM techniques create sinusoidal output from DC input.",
+      "main_parts": [
+        "DC Input",
+        "Switching Devices (IGBT/MOSFET)",
+        "Control Circuit",
+        "Gate Driver",
+        "Filter",
+        "AC Output",
+        "Heat Sink"
+      ],
+      "applications": [
+        "Solar power systems",
+        "UPS systems",
+        "Variable frequency drives",
+        "Electric vehicles",
+        "HVAC systems",
+        "Induction heating"
+      ],
+      "exam_notes": "Types: Voltage source, Current source. By phase: Single-phase, Three-phase. Topology: Half-bridge, Full-bridge, Three-level. PWM: SPWM, SVPWM. THD, switching frequency.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "eab455b7-7a67-4c4c-99ff-1abdb370a99a",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fbb"
+    },
+    {
+      "name": "Power Factor Correction Unit",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 5,
+      "definition": "A power factor correction unit improves the power factor of an electrical system by reducing reactive power demand using capacitor banks or active compensation.",
+      "working_principle": "Capacitors supply reactive power locally, reducing the reactive power drawn from the supply. Automatic switching based on load conditions.",
+      "main_parts": [
+        "Capacitor Bank",
+        "Contactors",
+        "Power Factor Controller",
+        "Current Transformer",
+        "Voltage Transformer",
+        "Protection Devices",
+        "Detuning Reactor"
+      ],
+      "applications": [
+        "Industrial plants",
+        "Commercial buildings",
+        "Penalty reduction",
+        "Voltage stability",
+        "Reduced transmission losses"
+      ],
+      "exam_notes": "Power Factor = cos\u03c6 = kW/kVA. Low PF causes: Inductive loads, underloaded motors. Benefits: Reduced losses, increased capacity. kVAR required = kW(tan\u03c61 - tan\u03c62). Automatic PFC panels.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "97bd6cc3-3fd0-400b-858e-bde4c0b052a6",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fbc"
+    },
+    {
+      "name": "Servo Motor",
+      "branch": "electrical",
+      "year": 4,
+      "semester": 7,
+      "definition": "A servo motor is a rotary or linear actuator that allows for precise control of angular or linear position, velocity, and acceleration.",
+      "working_principle": "Receives control signal indicating desired position, compares with actual position from encoder feedback, and adjusts to minimize error through closed-loop control.",
+      "main_parts": [
+        "DC/AC Motor",
+        "Encoder/Resolver",
+        "Controller",
+        "Amplifier",
+        "Gearbox",
+        "Feedback Device"
+      ],
+      "applications": [
+        "Robotics",
+        "CNC machines",
+        "3D printers",
+        "Camera auto-focus",
+        "Antenna positioning",
+        "Automated manufacturing"
+      ],
+      "exam_notes": "Types: DC servo, AC servo, Brushless servo. Position control via PWM signal. Encoder: Incremental, Absolute. PID control algorithm. Holding torque, dynamic torque.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "0aad8121-0663-4533-8b8c-b2594ff6ea04",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fbd"
+    },
+    {
+      "name": "Megger (Insulation Tester)",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 3,
+      "definition": "A megger is an instrument used to measure the electrical resistance of insulators to ensure the insulation integrity of electrical systems and equipment.",
+      "working_principle": "Applies a high DC voltage (500V-5000V) to the insulation and measures the resulting leakage current. Resistance calculated using Ohm's law (R = V/I).",
+      "main_parts": [
+        "DC Generator/Electronic Supply",
+        "Voltmeter",
+        "Test Leads",
+        "Range Selector",
+        "Guard Terminal",
+        "Display"
+      ],
+      "applications": [
+        "Cable testing",
+        "Motor winding insulation",
+        "Transformer insulation",
+        "Switchgear testing",
+        "Preventive maintenance"
+      ],
+      "exam_notes": "Test voltages: 250V, 500V, 1000V, 2500V, 5000V. Insulation resistance in M\u03a9. Polarization index (PI) = R10min/R1min. Temperature affects readings. DAR test.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "206eccde-27f3-4fad-9e80-0ef9cfc11834",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fbe"
+    },
+    {
+      "name": "SMPS (Switched Mode Power Supply)",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 6,
+      "definition": "An SMPS is an electronic power supply that incorporates a switching regulator to convert electrical power efficiently using high-frequency switching.",
+      "working_principle": "Input AC is rectified to DC, then chopped at high frequency (20-100kHz), transformed, rectified again, and filtered to produce stable DC output.",
+      "main_parts": [
+        "Rectifier",
+        "High Frequency Switching Circuit",
+        "Transformer",
+        "Output Rectifier",
+        "Filter",
+        "Control Circuit",
+        "Feedback Loop"
+      ],
+      "applications": [
+        "Computer power supplies",
+        "Mobile chargers",
+        "LED drivers",
+        "Industrial power supplies",
+        "Telecom equipment"
+      ],
+      "exam_notes": "Types: Buck, Boost, Buck-boost, Flyback, Forward converter. Advantages: High efficiency (80-95%), compact size. PWM control. Switching losses, EMI issues.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "ce151f19-6891-4379-9019-ea99546564ae",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fbf"
+    },
+    {
+      "name": "Synchronous Motor",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 6,
+      "definition": "A synchronous motor is an AC motor where the rotor rotates at synchronous speed (same as the rotating magnetic field) regardless of load.",
+      "working_principle": "DC excitation creates fixed magnetic poles on rotor. These lock with the rotating magnetic field of stator and rotate at exactly synchronous speed.",
+      "main_parts": [
+        "Stator",
+        "Rotor (Salient/Non-salient)",
+        "DC Excitation System",
+        "Damper Windings",
+        "Slip Rings",
+        "Bearings"
+      ],
+      "applications": [
+        "Power factor correction",
+        "Constant speed drives",
+        "Compressors",
+        "Rolling mills",
+        "Synchronous condensers",
+        "Large pumps"
+      ],
+      "exam_notes": "Speed: N = 120f/P (constant). V-curves, Inverted V-curves. Starting: Damper winding, VFD. Power factor control by excitation. Hunting, synchronizing power.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "4d926a17-fb4d-4208-a961-35c1199fed70",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc0"
+    },
+    {
+      "name": "Stepper Motor",
+      "branch": "electrical",
+      "year": 4,
+      "semester": 7,
+      "definition": "A stepper motor is a brushless DC motor that divides a full rotation into a number of equal steps, moving in discrete steps based on digital pulses.",
+      "working_principle": "Coils are energized in sequence creating a rotating magnetic field. Rotor aligns with each field position, moving in precise angular increments.",
+      "main_parts": [
+        "Stator Coils",
+        "Permanent Magnet/VR Rotor",
+        "Rotor Shaft",
+        "Driver Circuit",
+        "Controller"
+      ],
+      "applications": [
+        "3D printers",
+        "CNC machines",
+        "Scanners",
+        "Cameras",
+        "Robotics",
+        "Positioning systems"
+      ],
+      "exam_notes": "Types: Permanent magnet, Variable reluctance, Hybrid. Step angle = 360\u00b0/(rotor teeth \u00d7 phases). Unipolar, Bipolar. Driving modes: Full step, Half step, Microstepping. Holding torque.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "eb43af92-25ab-4c72-8d41-8fda260e0f6d",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc1"
+    },
+    {
+      "name": "Voltage Stabilizer",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A voltage stabilizer is a device that provides constant output voltage despite variations in input voltage or load conditions.",
+      "working_principle": "Uses servo motor-driven variable transformer (auto-transformer) or electronic switching to tap different transformer windings, maintaining constant output voltage.",
+      "main_parts": [
+        "Auto-transformer",
+        "Servo Motor/Electronic Switch",
+        "Buck-Boost Transformer",
+        "Control Circuit",
+        "Voltage Sensing",
+        "Relays"
+      ],
+      "applications": [
+        "Protecting sensitive equipment",
+        "Computer systems",
+        "Medical equipment",
+        "Refrigerators",
+        "Air conditioners",
+        "Industrial machinery"
+      ],
+      "exam_notes": "Types: Servo-controlled, Static (Relay-based), Electronic/Digital. Correction time, response time. Input voltage range typically \u00b130-40%. Output regulation \u00b11-5%.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "aab25674-f950-4ca8-a428-57333b13c57c",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc2"
+    },
+    {
+      "name": "Current Transformer (CT)",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A current transformer is an instrument transformer that produces an alternating current in its secondary proportional to the AC being measured in its primary.",
+      "working_principle": "Primary (few turns or single conductor) carries load current. This induces proportional current in secondary (many turns) based on turns ratio. Secondary never open-circuited.",
+      "main_parts": [
+        "Primary Winding",
+        "Secondary Winding",
+        "Magnetic Core",
+        "Insulation",
+        "Terminals",
+        "Burden"
+      ],
+      "applications": [
+        "Current measurement in HV systems",
+        "Protection relay inputs",
+        "Energy meters",
+        "Instrument panels",
+        "Power quality monitoring"
+      ],
+      "exam_notes": "Ratio: Ip/Is = Ns/Np. Accuracy class: 0.1, 0.2, 0.5, 1, 3, 5. Never open secondary (high voltage). Burden: Connected impedance. Knee point voltage. Bar-type, Wound-type, Core-balance CT.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "05126897-9115-4c8c-a6bd-8f325ea22cd0",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc3"
+    },
+    {
+      "name": "Potential Transformer (PT/VT)",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 4,
+      "definition": "A potential transformer is an instrument transformer used to transform high voltage to a lower, measurable voltage proportional to the voltage being measured.",
+      "working_principle": "Step-down transformer with precise ratio. Primary connected across high voltage, secondary provides safe, proportional low voltage for instruments.",
+      "main_parts": [
+        "Primary Winding (HV)",
+        "Secondary Winding (LV)",
+        "Magnetic Core",
+        "Insulation System",
+        "Bushings",
+        "Tank (for oil-filled)"
+      ],
+      "applications": [
+        "Voltage measurement in power systems",
+        "Protection relay voltage sensing",
+        "Energy meters",
+        "Synchronization",
+        "Insulation from HV"
+      ],
+      "exam_notes": "Ratio: Vp/Vs = Np/Ns. Standard secondary: 110V (phase), 110/\u221a3 V (line). Accuracy class: 0.1, 0.2, 0.5, 1, 3. Burden: VA rating. Capacitor VT for EHV systems.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "43afc242-5d5e-4a56-a63e-2f039f6e1e15",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc4"
+    },
+    {
+      "name": "Lightning Arrester",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 5,
+      "definition": "A lightning arrester is a protective device that diverts high-voltage surges caused by lightning or switching operations to ground, protecting equipment.",
+      "working_principle": "Contains voltage-dependent resistors (metal oxide varistors). During surge, resistance drops dramatically, providing low-impedance path to ground. Returns to high resistance after surge.",
+      "main_parts": [
+        "Metal Oxide Varistors (MOV)",
+        "Spark Gaps (in older types)",
+        "Insulating Housing",
+        "Terminals",
+        "Grounding Connection"
+      ],
+      "applications": [
+        "Transmission line protection",
+        "Substation equipment protection",
+        "Distribution transformer protection",
+        "Building protection",
+        "Telecom equipment protection"
+      ],
+      "exam_notes": "Types: Rod gap, Horn gap, Multi-gap, Valve-type, Metal oxide (MOV). Parameters: Rated voltage, MCOV (Max continuous operating voltage), Discharge current, Energy absorption capability.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "63062b13-c81d-4612-84ab-75516ef598eb",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc5"
+    },
+    {
+      "name": "Energy Meter",
+      "branch": "electrical",
+      "year": 2,
+      "semester": 3,
+      "definition": "An energy meter is an instrument used to measure the amount of electrical energy consumed by a residence, business, or electrically powered device.",
+      "working_principle": "Measures both voltage and current continuously. Multiplies instantaneous values and integrates over time to calculate energy (kWh). Digital meters use microprocessors.",
+      "main_parts": [
+        "Voltage Coil",
+        "Current Coil",
+        "Rotating Disc/Electronic Processor",
+        "Register/Display",
+        "Terminals",
+        "Meter Constant"
+      ],
+      "applications": [
+        "Residential billing",
+        "Industrial energy monitoring",
+        "Load profiling",
+        "Demand metering",
+        "Time-of-use metering"
+      ],
+      "exam_notes": "Types: Electromechanical (induction), Electronic, Smart meters. Units: kWh. Meter constant: Rev/kWh. Errors: Friction, phase, creeping. Testing: Phantom loading, direct loading.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "54435f30-cb11-40ba-ac2b-49fd8a5f9bcc",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc6"
+    },
+    {
+      "name": "Capacitor Bank",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 5,
+      "definition": "A capacitor bank is a group of several capacitors connected in series or parallel used to store electrical energy and improve power factor.",
+      "working_principle": "Capacitors store energy in electric field and supply reactive power (kVAR) to compensate for lagging power factor caused by inductive loads.",
+      "main_parts": [
+        "Capacitor Units",
+        "Discharge Resistors",
+        "Fuses",
+        "Contactors",
+        "Protection Relays",
+        "Reactors (for harmonic filtering)"
+      ],
+      "applications": [
+        "Power factor correction",
+        "Voltage support",
+        "Harmonic filtering",
+        "Reactive power compensation",
+        "Penalty avoidance"
+      ],
+      "exam_notes": "Reactive power: Q = V\u00b2/Xc = V\u00b2\u03c9C. Connection: Star, Delta. Automatic power factor correction. Detuned reactor to avoid resonance. kVAR calculation for target PF.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "cb17419d-cf75-4f98-8ecf-81dc137ac24f",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc7"
+    },
+    {
+      "name": "UPS (Uninterruptible Power Supply)",
+      "branch": "electrical",
+      "year": 3,
+      "semester": 6,
+      "definition": "A UPS is an electrical apparatus that provides emergency power to a load when the input power source fails, typically using batteries.",
+      "working_principle": "During normal operation, battery is charged and load is powered. On power failure, inverter converts battery DC to AC instantly. Seamless switchover in online UPS.",
+      "main_parts": [
+        "Rectifier/Charger",
+        "Battery Bank",
+        "Inverter",
+        "Static Bypass Switch",
+        "Control Logic",
+        "Isolation Transformer"
+      ],
+      "applications": [
+        "Data centers",
+        "Hospitals",
+        "Telecom",
+        "Computer systems",
+        "Industrial process control",
+        "Emergency lighting"
+      ],
+      "exam_notes": "Types: Offline (Standby), Line-interactive, Online (Double conversion). Backup time calculation. VA rating vs W rating. Power factor. Lead-acid vs Li-ion batteries.",
+      "image_url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "id": "ffbabda0-6ddc-4153-b499-0c2fd6858f04",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc8"
+    },
+    {
+      "name": "Theodolite",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "A theodolite is a precision optical instrument used for measuring horizontal and vertical angles in surveying and engineering applications.",
+      "working_principle": "Uses a rotating telescope mounted on horizontal and vertical axes. Angles are measured using graduated circles and vernier scales or digital displays with high precision.",
+      "main_parts": [
+        "Telescope",
+        "Horizontal Circle",
+        "Vertical Circle",
+        "Vernier Scales/Display",
+        "Leveling Screws",
+        "Tribrach",
+        "Plumb Bob",
+        "Optical Plummet",
+        "Compass"
+      ],
+      "applications": [
+        "Land surveying",
+        "Construction layout",
+        "Triangulation",
+        "Alignment work",
+        "Setting out curves",
+        "Tacheometric surveying"
+      ],
+      "exam_notes": "Types: Transit theodolite, Non-transit theodolite, Digital theodolite. Temporary adjustments: Leveling, Centering, Focusing. Permanent adjustments. Least count = Value of 1 div / No. of divisions on vernier. Errors and precautions.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "b5d1325f-3ed9-485a-9f3a-a7c250175810",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fc9"
+    },
+    {
+      "name": "Total Station",
+      "branch": "civil",
+      "year": 3,
+      "semester": 5,
+      "definition": "A total station is an electronic/optical surveying instrument that integrates electronic theodolite with electronic distance meter (EDM) and processes data internally.",
+      "working_principle": "Combines angle measurement (electronic theodolite) with distance measurement (EDM using electromagnetic waves). Microprocessor calculates coordinates, elevations, and can store data digitally.",
+      "main_parts": [
+        "Electronic Theodolite",
+        "EDM (Electronic Distance Meter)",
+        "Microprocessor",
+        "Display Screen",
+        "Keyboard",
+        "Data Storage",
+        "Battery",
+        "Tripod Mount",
+        "Prism Target"
+      ],
+      "applications": [
+        "Topographic surveys",
+        "Construction staking",
+        "As-built surveys",
+        "Volume calculations",
+        "Digital mapping",
+        "Setting out",
+        "Monitoring"
+      ],
+      "exam_notes": "Advantages: Faster, more accurate, direct data storage, calculates coordinates automatically. Accuracy: Angle \u00b12-5 seconds, Distance \u00b12mm\u00b12ppm. Robotic total station. Data download to CAD.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "9c2f0623-f356-4c21-a358-5c1f55cdc4e6",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fca"
+    },
+    {
+      "name": "Dumpy Level",
+      "branch": "civil",
+      "year": 1,
+      "semester": 2,
+      "definition": "A dumpy level is a surveying instrument used for establishing or checking points in the same horizontal plane and measuring height differences.",
+      "working_principle": "Telescope with cross-hairs provides line of sight. After leveling, this line of sight is horizontal. Staff readings at different points give relative elevations.",
+      "main_parts": [
+        "Telescope",
+        "Bubble Tube",
+        "Leveling Screws",
+        "Tribrach",
+        "Vertical Spindle",
+        "Leveling Head",
+        "Focusing Screw",
+        "Eyepiece"
+      ],
+      "applications": [
+        "Leveling operations",
+        "Establishing benchmarks",
+        "Profile leveling",
+        "Cross-sectioning",
+        "Contouring",
+        "Construction work"
+      ],
+      "exam_notes": "Temporary adjustments: Setting up, Leveling, Focusing, Elimination of parallax. Permanent adjustments: Two peg test. Types of leveling: Differential, Profile, Reciprocal. Height of collimation method, Rise and fall method.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "01b2e778-2440-47e8-adbe-66a881763e11",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fcb"
+    },
+    {
+      "name": "Auto Level",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "An automatic level (auto level) is a surveying leveling instrument that automatically levels the line of sight using a compensator mechanism.",
+      "working_principle": "After rough leveling using circular bubble, internal compensator (gravity-controlled pendulum system) automatically makes line of sight horizontal.",
+      "main_parts": [
+        "Telescope",
+        "Automatic Compensator",
+        "Circular Bubble",
+        "Focusing Knob",
+        "Horizontal Circle",
+        "Base Plate",
+        "Tribrach",
+        "Tripod Connection"
+      ],
+      "applications": [
+        "Precise leveling",
+        "Bench mark transfer",
+        "Long route leveling",
+        "Construction elevation control",
+        "Profile surveys"
+      ],
+      "exam_notes": "Advantages over dumpy level: Faster, self-leveling, less operator error. Accuracy: \u00b10.5mm to \u00b13mm per km double run. Check compensator working regularly. Magnification typically 20x-32x.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "438bbf99-e924-41fb-b214-2143aa83dce0",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fcc"
+    },
+    {
+      "name": "GPS/GNSS Receiver",
+      "branch": "civil",
+      "year": 4,
+      "semester": 7,
+      "definition": "A GNSS receiver is a satellite-based positioning device that determines precise location coordinates using signals from multiple satellite systems.",
+      "working_principle": "Receives signals from 4 or more satellites. Calculates position using trilateration based on signal travel time. Corrections from base station improve accuracy (RTK/PPK).",
+      "main_parts": [
+        "Antenna",
+        "Receiver Unit",
+        "Controller/Data Logger",
+        "Battery",
+        "Communication Module (for RTK)",
+        "Memory Card"
+      ],
+      "applications": [
+        "Control surveying",
+        "Geodetic surveys",
+        "GIS data collection",
+        "Construction machine guidance",
+        "Deformation monitoring",
+        "Cadastral surveys"
+      ],
+      "exam_notes": "Systems: GPS (USA), GLONASS (Russia), Galileo (EU), BeiDou (China). Accuracy: Static (mm), RTK (cm), Autonomous (m). DOP factors. Base-rover setup. Post-processing.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "8225f5b6-7ca4-4abe-bb49-1b6d2b219695",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fcd"
+    },
+    {
+      "name": "Concrete Mixer",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "A concrete mixer is a machine that homogeneously combines cement, aggregate (sand, gravel), and water to form concrete for construction.",
+      "working_principle": "Rotating drum with blades mixes ingredients. Tilting drum type discharges by tilting, non-tilting type by reversing rotation or using chute.",
+      "main_parts": [
+        "Mixing Drum",
+        "Blades",
+        "Motor",
+        "Chassis/Frame",
+        "Hopper",
+        "Discharge Chute",
+        "Water Tank"
+      ],
+      "applications": [
+        "Concrete mixing for construction",
+        "Road construction",
+        "Building construction",
+        "Precast element production",
+        "Repair works"
+      ],
+      "exam_notes": "Types: Batch mixers (Tilting, Non-tilting, Reverse drum, Forced), Continuous mixers. Capacity: 0.25m\u00b3 to 3m\u00b3 typical. Mix design, W/C ratio, Slump test, Mixing time.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "182f4f7f-56e0-4c6d-bd11-d7492bc96bf4",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fce"
+    },
+    {
+      "name": "Vibrator (Concrete)",
+      "branch": "civil",
+      "year": 2,
+      "semester": 4,
+      "definition": "A concrete vibrator is used to consolidate fresh concrete by removing trapped air voids and ensuring uniform compaction for increased strength and durability.",
+      "working_principle": "High-frequency vibrations (typically 10,000-15,000 vibrations/min) reduce internal friction between concrete particles, allowing them to settle densely and expel air.",
+      "main_parts": [
+        "Vibrating Head/Poker",
+        "Flexible Shaft",
+        "Electric/Petrol Motor",
+        "Control Switch",
+        "Power Cable"
+      ],
+      "applications": [
+        "Compacting concrete in columns",
+        "Beam and slab casting",
+        "Dense concrete requirements",
+        "Precast elements",
+        "Mass concreting"
+      ],
+      "exam_notes": "Types: Internal (needle/poker), External (formwork), Surface (screed). Frequency: 10,000-18,000 VPM. Radius of action: 30-50cm. Over-vibration causes segregation. Insert vertically, slow withdrawal.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "5b40425a-f0f8-4a77-b49f-421c5c86f57e",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fcf"
+    },
+    {
+      "name": "Compactor (Soil/Road Roller)",
+      "branch": "civil",
+      "year": 3,
+      "semester": 5,
+      "definition": "A compactor is a construction machine used to compress soil, gravel, concrete, or asphalt to increase density and load-bearing capacity.",
+      "working_principle": "Applies static weight and/or vibration to compress material layers. Repeated passes progressively densify material by expelling air voids.",
+      "main_parts": [
+        "Drum/Roller",
+        "Vibration Mechanism",
+        "Engine",
+        "Cabin",
+        "Hydraulic System",
+        "Water Sprinkler (for asphalt)"
+      ],
+      "applications": [
+        "Road construction",
+        "Embankment compaction",
+        "Foundation preparation",
+        "Trench backfilling",
+        "Airport runway construction"
+      ],
+      "exam_notes": "Types: Smooth wheel, Pneumatic tyred, Sheepsfoot, Vibratory, Tandem. Suitable for different soils. Field density tests: Sand replacement, Core cutter. Compaction curve, OMC, MDD.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "be2acd65-2421-4071-bdbb-a6d7c12a30c8",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd0"
+    },
+    {
+      "name": "Compression Testing Machine (CTM)",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "A compression testing machine (CTM) is used to determine the compressive strength of concrete cubes, cylinders, and other construction materials.",
+      "working_principle": "Applies gradually increasing compressive load on specimen between two platens until failure. Load at failure divided by cross-sectional area gives compressive strength.",
+      "main_parts": [
+        "Loading Frame",
+        "Hydraulic System",
+        "Upper and Lower Platens",
+        "Load Cell",
+        "Pressure Gauge/Digital Display",
+        "Control Valves"
+      ],
+      "applications": [
+        "Concrete cube testing",
+        "Brick strength testing",
+        "Stone strength testing",
+        "Mortar testing",
+        "Quality control in construction"
+      ],
+      "exam_notes": "Cube size: 150mm \u00d7 150mm \u00d7 150mm standard. Curing: 7 days, 28 days. Loading rate: 140 kg/cm\u00b2/min. Compressive strength formula: \u03c3c = P/A. M20, M25, M30 grade concrete.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "867fca78-889f-47a8-85d6-71290741f78f",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd1"
+    },
+    {
+      "name": "Universal Testing Machine (UTM)",
+      "branch": "civil",
+      "year": 3,
+      "semester": 5,
+      "definition": "A universal testing machine (UTM) performs tensile, compression, bending, and shear tests on various materials to determine mechanical properties.",
+      "working_principle": "Applies controlled force/displacement on specimen. Load cells and extensometers measure force and deformation. Stress-strain curves generated.",
+      "main_parts": [
+        "Load Frame",
+        "Hydraulic/Electro-mechanical Actuator",
+        "Load Cell",
+        "Grips/Fixtures",
+        "Extensometer",
+        "Control System",
+        "Data Acquisition"
+      ],
+      "applications": [
+        "Steel reinforcement tensile test",
+        "Concrete compression/flexure",
+        "Material characterization",
+        "Quality control",
+        "Research and development"
+      ],
+      "exam_notes": "Tests: Tensile (yield strength, ultimate strength, % elongation), Compression, Bending (flexural strength). Stress-strain curve. Young's modulus, Poisson's ratio. IS codes for testing.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "9c4a18cb-d2e7-41b6-a121-74d9d32f06b5",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd2"
+    },
+    {
+      "name": "Slump Cone Test Apparatus",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "Slump cone test apparatus measures the workability and consistency of fresh concrete before it sets.",
+      "working_principle": "Fresh concrete filled in standard cone mold, tamped in layers, cone lifted vertically. The slump (vertical settlement) indicates workability.",
+      "main_parts": [
+        "Slump Cone (frustum of cone)",
+        "Base Plate",
+        "Tamping Rod",
+        "Measuring Scale"
+      ],
+      "applications": [
+        "Quality control of concrete",
+        "Checking water-cement ratio",
+        "Ensuring specified workability",
+        "Mix design verification"
+      ],
+      "exam_notes": "Cone dimensions: Top 100mm, Bottom 200mm, Height 300mm. Slump types: True slump, Shear slump, Collapse slump. Slump values: 0-25mm (very low), 50-100mm (medium), 100-150mm (high). Affects: W/C ratio, aggregate grading.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "7347dc6a-dd48-4a3d-91d9-e7f97dea7e5b",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd3"
+    },
+    {
+      "name": "Oven (Materials Testing)",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "A laboratory oven is used to dry soil, aggregate, and other construction materials to constant mass for determining moisture content and other properties.",
+      "working_principle": "Maintains controlled temperature (typically 105-110\u00b0C) to evaporate moisture from samples without decomposing or altering material properties.",
+      "main_parts": [
+        "Insulated Chamber",
+        "Heating Elements",
+        "Temperature Controller",
+        "Thermostat",
+        "Air Circulation Fan",
+        "Racks/Trays",
+        "Door"
+      ],
+      "applications": [
+        "Water content determination",
+        "Atterberg limits testing",
+        "Aggregate moisture content",
+        "Drying concrete specimens",
+        "Soil density tests"
+      ],
+      "exam_notes": "Standard temperature: 105-110\u00b0C for soil. Drying to constant mass (weight change <0.1% in 4 hours). Water content = (Wet weight - Dry weight)/Dry weight \u00d7 100%. IS codes: IS 2720.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "6f8d3db2-995d-4526-b5a9-a514b615d834",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd4"
+    },
+    {
+      "name": "Sieve Shaker",
+      "branch": "civil",
+      "year": 2,
+      "semester": 3,
+      "definition": "A sieve shaker is a mechanical device used to separate particles of different sizes in soil and aggregate samples for gradation analysis.",
+      "working_principle": "Stack of sieves with decreasing mesh size vibrates mechanically. Particles pass through sieves according to size, separating into fractions.",
+      "main_parts": [
+        "Vibrating Platform",
+        "Motor",
+        "Sieve Stack Holder",
+        "Set of Sieves (IS)",
+        "Collection Pan",
+        "Timer",
+        "Clamp"
+      ],
+      "applications": [
+        "Particle size distribution analysis",
+        "Aggregate gradation",
+        "Soil classification",
+        "Quality control of sand/aggregates",
+        "Mix design"
+      ],
+      "exam_notes": "IS sieve sizes: 80mm, 40mm, 20mm, 10mm, 4.75mm, 2.36mm, 1.18mm, 600\u00b5, 300\u00b5, 150\u00b5, 75\u00b5. Sieve analysis: Cumulative % retained, % passing. Grading curves. Fineness modulus.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "343da18a-8f93-444e-8e5a-a8d8e2aa0f48",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd5"
+    },
+    {
+      "name": "Proctor Compaction Test Apparatus",
+      "branch": "civil",
+      "year": 2,
+      "semester": 4,
+      "definition": "Proctor compaction test apparatus determines the optimum moisture content (OMC) and maximum dry density (MDD) of soil for compaction specifications.",
+      "working_principle": "Soil samples at various moisture contents are compacted in a mold using standard energy. Dry density plotted against moisture content gives compaction curve.",
+      "main_parts": [
+        "Compaction Mold (1000 cc)",
+        "Rammer (2.6kg or 4.9kg)",
+        "Collar",
+        "Base Plate",
+        "Straight Edge"
+      ],
+      "applications": [
+        "Soil compaction specifications",
+        "Embankment construction",
+        "Road subgrade design",
+        "Foundation work",
+        "Quality control"
+      ],
+      "exam_notes": "Types: Standard Proctor (light), Modified Proctor (heavy). Rammer drop: 310mm (standard), 450mm (modified). Layers: 3 (standard), 5 (modified). Blows/layer: 25. Compaction curve peak gives OMC & MDD.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "f1ed8d44-cc07-45ba-8021-d8c455676efb",
+      "created_at": "2026-07-21T09:22:53.510532+00:00",
+      "updated_at": "2026-07-21T09:22:53.510532+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd6"
+    },
+    {
+      "name": "Direct Shear Test Apparatus",
+      "branch": "civil",
+      "year": 3,
+      "semester": 5,
+      "definition": "Direct shear test apparatus determines the shear strength parameters (cohesion and angle of internal friction) of soil samples.",
+      "working_principle": "Soil specimen placed in split box. Normal load applied vertically. Horizontal shear force gradually increased until failure occurs along horizontal plane.",
+      "main_parts": [
+        "Shear Box (split into two halves)",
+        "Loading Frame",
+        "Normal Load Application",
+        "Shear Force Application",
+        "Proving Ring",
+        "Dial Gauges",
+        "Grid Plates"
+      ],
+      "applications": [
+        "Foundation design",
+        "Slope stability analysis",
+        "Retaining wall design",
+        "Earth pressure calculations",
+        "Soil parameter determination"
+      ],
+      "exam_notes": "Shear strength: \u03c4 = c + \u03c3tan\u03c6 (Mohr-Coulomb). Tests at different normal stresses. Plot \u03c4 vs \u03c3, slope = tan\u03c6, intercept = c. Drained vs undrained conditions. IS 2720 Part 13.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "496150eb-6df3-4a8f-911e-e7168067c52c",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd7"
+    },
+    {
+      "name": "CBR Test Apparatus",
+      "branch": "civil",
+      "year": 3,
+      "semester": 6,
+      "definition": "California Bearing Ratio (CBR) test apparatus measures the bearing capacity of soil and aggregates for pavement design.",
+      "working_principle": "Penetration plunger pushed into compacted soil specimen at controlled rate. Load required for penetration compared to standard crushed stone (100% CBR).",
+      "main_parts": [
+        "Loading Frame",
+        "Mold (150mm dia)",
+        "Plunger (50mm dia)",
+        "Proving Ring/Load Cell",
+        "Dial Gauge",
+        "Surcharge Weights",
+        "Spacer Disc"
+      ],
+      "applications": [
+        "Flexible pavement design",
+        "Subgrade evaluation",
+        "Base/sub-base design",
+        "Airport runway design",
+        "Road construction"
+      ],
+      "exam_notes": "CBR = (Test load/Standard load) \u00d7 100%. Penetrations: 2.5mm, 5mm. Standard load: 1370kg (2.5mm), 2055kg (5mm). CBR values: <3% (very poor), 3-7% (poor to fair), 7-20% (fair), >20% (good). Soaked vs unsoaked.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "f5e38e30-e5b8-4eea-b442-391bc385535f",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd8"
+    },
+    {
+      "name": "Triaxial Test Apparatus",
+      "branch": "civil",
+      "year": 4,
+      "semester": 7,
+      "definition": "Triaxial test apparatus determines shear strength, stress-strain behavior, and other mechanical properties of soil under controlled stress conditions.",
+      "working_principle": "Cylindrical soil specimen enclosed in rubber membrane, subjected to confining pressure (cell pressure) and axial loading. Drainage and pore pressure can be controlled.",
+      "main_parts": [
+        "Triaxial Cell (acrylic/metal)",
+        "Loading Frame",
+        "Pressure System",
+        "Pore Pressure Transducer",
+        "Volume Change Device",
+        "Back Pressure System",
+        "Data Acquisition"
+      ],
+      "applications": [
+        "Advanced soil characterization",
+        "Foundation design",
+        "Slope stability",
+        "Earth dam design",
+        "Research"
+      ],
+      "exam_notes": "Types: UU (Unconsolidated Undrained), CU (Consolidated Undrained), CD (Consolidated Drained). Mohr circle analysis. Effective stress, Pore pressure. \u03c6 and c determination more accurate than direct shear.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "14920753-650b-4ae8-9c2d-2a1031cbd5a2",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fd9"
+    },
+    {
+      "name": "Plate Load Test Apparatus",
+      "branch": "civil",
+      "year": 4,
+      "semester": 7,
+      "definition": "Plate load test apparatus determines the bearing capacity and settlement characteristics of soil in-situ at foundation level.",
+      "working_principle": "Rigid steel plate loaded incrementally on prepared soil surface. Settlement measured at each load increment. Load-settlement curve analyzed for bearing capacity.",
+      "main_parts": [
+        "Steel Plates (300mm, 450mm, 600mm, 750mm dia)",
+        "Hydraulic Jack",
+        "Reaction Load (loaded truck/beam)",
+        "Settlement Dial Gauges",
+        "Proving Ring/Load Cell"
+      ],
+      "applications": [
+        "Foundation bearing capacity",
+        "Settlement prediction",
+        "Soil modulus determination",
+        "Pavement subgrade evaluation",
+        "Quality assurance"
+      ],
+      "exam_notes": "Ultimate bearing capacity at settlement = plate diameter/10. Safe bearing capacity = UBC/FOS. Plate sizes for different foundations. Load increments, holding time. Settlement rate <0.02mm/min for next loading.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "ea5504b2-b64c-49f9-95ec-feca524753ac",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fda"
+    },
+    {
+      "name": "Plumb Bob",
+      "branch": "civil",
+      "year": 1,
+      "semester": 1,
+      "definition": "A plumb bob is a simple tool consisting of a weight suspended from a string, used to establish a true vertical reference line.",
+      "working_principle": "Gravity pulls the weight directly downward, creating a perfectly vertical line. The string shows true vertical regardless of surrounding structures.",
+      "main_parts": [
+        "Weight (brass/steel cone)",
+        "String/Cord",
+        "Suspension Point"
+      ],
+      "applications": [
+        "Checking vertical alignment",
+        "Transferring points vertically",
+        "Theodolite centering",
+        "Column verticality check",
+        "Wall verticality"
+      ],
+      "exam_notes": "Essential for setting instruments over survey points. Wind affects accuracy. Laser plumb bobs now available for high-rise. Used with theodolite for precise centering over stations.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "40cda217-4509-4506-be5c-06da5c6cb01a",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fdb"
+    },
+    {
+      "name": "Paver Machine (Asphalt)",
+      "branch": "civil",
+      "year": 4,
+      "semester": 7,
+      "definition": "An asphalt paver is a construction machine used to lay asphalt concrete on roads, parking lots, and other surfaces uniformly and efficiently.",
+      "working_principle": "Receives hot asphalt from dump trucks into hopper, conveys it to rear, spreads uniformly via screed which also provides initial compaction and smooth finish.",
+      "main_parts": [
+        "Hopper",
+        "Conveyor System",
+        "Screed (fixed or extending)",
+        "Heating System",
+        "Leveling Controls",
+        "Tractor Unit",
+        "Control Panel"
+      ],
+      "applications": [
+        "Road paving",
+        "Highway construction",
+        "Airport runway paving",
+        "Parking lot construction",
+        "Resurfacing work"
+      ],
+      "exam_notes": "Types: Tracked, Wheeled. Screed: Fixed width, Extendable. Paving width: 2.5m to 12m. Thickness: 25mm to 300mm. Temperature control critical. Grade and slope control systems. Compaction follows immediately.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "5b71df84-817d-450b-bcb2-bbec6ea38ab5",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fdc"
+    },
+    {
+      "name": "Excavator",
+      "branch": "civil",
+      "year": 2,
+      "semester": 4,
+      "definition": "An excavator is a heavy construction machine consisting of a boom, dipper, bucket and cab on a rotating platform, used for excavation and material handling.",
+      "working_principle": "Hydraulic cylinders control boom, arm, and bucket movements. Rotating superstructure allows 360\u00b0 operation. Operator controls from cab using joysticks.",
+      "main_parts": [
+        "Undercarriage (tracks/wheels)",
+        "Rotating Platform",
+        "Boom",
+        "Arm/Dipper",
+        "Bucket",
+        "Hydraulic System",
+        "Cab",
+        "Engine"
+      ],
+      "applications": [
+        "Digging foundations",
+        "Trenching",
+        "Material handling",
+        "Demolition",
+        "Mining",
+        "River dredging",
+        "Landscaping"
+      ],
+      "exam_notes": "Types: Crawler, Wheeled, Mini excavator. Bucket capacity: 0.2 m\u00b3 to 5 m\u00b3. Attachments: Breaker, Grapple, Auger. Operating radius, digging depth, reach specifications. Hourly output calculation.",
+      "image_url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "id": "6bbd1315-245a-4184-aabf-bb05e57305e2",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fdd"
+    },
+    {
+      "name": "Oscilloscope",
+      "branch": "electronics",
+      "year": 2,
+      "semester": 3,
+      "definition": "An oscilloscope is an electronic test instrument that graphically displays varying electrical voltages as a two-dimensional plot of voltage versus time.",
+      "working_principle": "Input signal applied to vertical deflection system. Time base generator creates horizontal sweep. CRT/LCD displays waveform. Digital scopes sample and store signal digitally.",
+      "main_parts": [
+        "Display (CRT/LCD/TFT)",
+        "Vertical Amplifier",
+        "Horizontal Amplifier (Time Base)",
+        "Trigger Circuit",
+        "Probes",
+        "Control Panel",
+        "ADC (in DSO)"
+      ],
+      "applications": [
+        "Waveform analysis",
+        "Signal integrity testing",
+        "Frequency measurement",
+        "Phase shift measurement",
+        "Circuit debugging",
+        "Rise/fall time measurement"
+      ],
+      "exam_notes": "Types: Analog (CRT-based), Digital Storage Oscilloscope (DSO), Mixed Signal Oscilloscope (MSO). Key specs: Bandwidth, Sample rate, Rise time. Trigger modes: Auto, Normal, Single. Measurements: Vpp, Vrms, frequency, duty cycle.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "6a9f4aa1-7090-49d2-9dc3-44f9389c5119",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fde"
+    },
+    {
+      "name": "Function Generator",
+      "branch": "electronics",
+      "year": 2,
+      "semester": 3,
+      "definition": "A function generator is an electronic instrument that produces various types of electrical waveforms over a wide range of frequencies for testing circuits.",
+      "working_principle": "Uses oscillator circuits (RC, LC, or crystal controlled) to generate periodic waveforms. Waveform shaping circuits convert basic oscillations to desired shapes (sine, square, triangle).",
+      "main_parts": [
+        "Oscillator Circuit",
+        "Waveform Shaping Circuit",
+        "Frequency Control",
+        "Amplitude Control",
+        "DC Offset Control",
+        "Output Attenuator",
+        "Display",
+        "Modulation Circuit"
+      ],
+      "applications": [
+        "Circuit testing",
+        "Audio equipment testing",
+        "Signal injection",
+        "Frequency response testing",
+        "Education and training",
+        "Amplifier testing"
+      ],
+      "exam_notes": "Common waveforms: Sine, Square, Triangle, Sawtooth, Pulse, Ramp. Frequency range: mHz to MHz. Parameters: Frequency, Amplitude, DC offset, Duty cycle, Symmetry. Arbitrary waveform generators (AWG) for complex signals.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "e17f1649-cc51-4255-9320-b3bc72934890",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fdf"
+    },
+    {
+      "name": "Power Supply (DC Bench)",
+      "branch": "electronics",
+      "year": 1,
+      "semester": 2,
+      "definition": "A bench power supply is a laboratory instrument that provides stable, adjustable DC voltage and current for powering and testing electronic circuits.",
+      "working_principle": "AC mains converted to DC via transformer, rectifier, filter. Linear or switching regulation maintains constant voltage/current. Feedback loop corrects for load variations.",
+      "main_parts": [
+        "Transformer",
+        "Rectifier",
+        "Filter Capacitors",
+        "Voltage Regulator",
+        "Current Limiter",
+        "Display (V & A)",
+        "Control Knobs",
+        "Output Terminals"
+      ],
+      "applications": [
+        "Powering circuits under test",
+        "Battery charging",
+        "Component testing",
+        "Electroplating",
+        "Educational experiments",
+        "R&D labs"
+      ],
+      "exam_notes": "Types: Linear (low noise, low efficiency), Switching (high efficiency, compact). Modes: Constant Voltage (CV), Constant Current (CC). Specs: Voltage range, Current capacity, Ripple, Load/Line regulation. Multi-channel supplies.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "adbf6653-17a6-4210-8bb3-2b2449dc1baf",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe0"
+    },
+    {
+      "name": "Multimeter (Digital)",
+      "branch": "electronics",
+      "year": 1,
+      "semester": 1,
+      "definition": "A digital multimeter (DMM) is a portable electronic measuring instrument that combines several measurement functions including voltage, current, and resistance.",
+      "working_principle": "Converts analog input signal to digital using ADC. Microcontroller processes and displays result on LCD/LED. Range selection and function switches configure internal circuits.",
+      "main_parts": [
+        "ADC (Analog-to-Digital Converter)",
+        "Display",
+        "Rotary Switch/Function Selector",
+        "Input Terminals",
+        "Shunt Resistors",
+        "Voltage Divider",
+        "Microcontroller",
+        "Battery"
+      ],
+      "applications": [
+        "Voltage measurement (AC/DC)",
+        "Current measurement (AC/DC)",
+        "Resistance measurement",
+        "Continuity testing",
+        "Diode testing",
+        "Transistor testing",
+        "Capacitance/frequency (advanced models)"
+      ],
+      "exam_notes": "True RMS vs Average sensing. Auto-ranging vs Manual. Accuracy: \u00b1 (% of reading + digits). Input impedance: 10M\u03a9 for voltage. Safety rating: CAT I, II, III, IV. Hold, Min/Max, Rel functions.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "451be74f-22b1-4232-bef9-78ce76aab9bf",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe1"
+    },
+    {
+      "name": "Breadboard",
+      "branch": "electronics",
+      "year": 1,
+      "semester": 1,
+      "definition": "A breadboard is a reusable solderless device used to build temporary prototypes and test electronic circuits without soldering components.",
+      "working_principle": "Contains spring clips underneath holes arranged in rows and columns. Components inserted into holes make electrical connections through clips. Power rails run along sides.",
+      "main_parts": [
+        "Plastic Base",
+        "Spring Clip Contacts",
+        "Contact Holes (0.1 inch spacing)",
+        "Power Rails (+/\u2212)",
+        "Binding Posts (some models)"
+      ],
+      "applications": [
+        "Circuit prototyping",
+        "Testing circuit designs",
+        "Learning electronics",
+        "Debugging",
+        "Temporary circuit assembly",
+        "Demonstrations"
+      ],
+      "exam_notes": "Typical size: 830 tie points. Terminal strips (5 holes connected), Power strips (entire row connected). Limited to low frequency (<10MHz) due to parasitic capacitance. Max current ~1-2A. Jumper wires (solid core, 22-26 AWG).",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "620575d5-5f1c-4aea-8792-e75bd9fce7f8",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe2"
+    },
+    {
+      "name": "Soldering Station",
+      "branch": "electronics",
+      "year": 1,
+      "semester": 2,
+      "definition": "A soldering station is a temperature-controlled tool used to join electronic components to PCBs by melting solder to create electrical and mechanical connections.",
+      "working_principle": "Heating element in iron tip controlled by temperature feedback loop. Thermocouple or sensor monitors tip temperature. Controller maintains set temperature \u00b11-5\u00b0C.",
+      "main_parts": [
+        "Soldering Iron",
+        "Heating Element",
+        "Temperature Control Unit",
+        "Tip",
+        "Stand",
+        "Sponge/Brass Cleaner",
+        "Power Cord"
+      ],
+      "applications": [
+        "PCB assembly",
+        "Component replacement",
+        "Wire joining",
+        "Through-hole soldering",
+        "SMD soldering (with fine tips)",
+        "Repair work"
+      ],
+      "exam_notes": "Temperature: 300-400\u00b0C typical. Lead-free solder needs higher temp (350-380\u00b0C) than leaded (320-350\u00b0C). Tip types: Chisel, Conical, Bevel. Flux removes oxidation. Solder: 60/40 (Sn/Pb), SAC305 (lead-free). ESD-safe stations.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "54774a00-084f-4ecc-b675-5215d08dbc3a",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe3"
+    },
+    {
+      "name": "Logic Analyzer",
+      "branch": "electronics",
+      "year": 3,
+      "semester": 6,
+      "definition": "A logic analyzer is an electronic instrument that captures and displays multiple digital signals simultaneously, showing timing relationships and protocol decoding.",
+      "working_principle": "Samples multiple digital channels at high speed, stores data in memory. Triggers on specific patterns. Displays timing diagram showing state changes of all channels.",
+      "main_parts": [
+        "Input Channels (8, 16, 32, 64+)",
+        "High-speed Sampling System",
+        "Memory Buffer",
+        "Trigger Logic",
+        "Display Interface",
+        "Protocol Decoders",
+        "Probes"
+      ],
+      "applications": [
+        "Digital circuit debugging",
+        "Timing analysis",
+        "Protocol analysis (I2C, SPI, UART, CAN)",
+        "Microcontroller debugging",
+        "FPGA verification",
+        "Bus analysis"
+      ],
+      "exam_notes": "Sample rate: MHz to GHz. Channels: 8 to 100+. Trigger types: Edge, Pattern, Glitch, Setup/Hold. Mixed Signal Oscilloscope (MSO) combines analog + logic channels. Protocol decoders essential for serial buses.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "627d8cfb-e182-4e8f-8cf8-4a7ed605e72e",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe4"
+    },
+    {
+      "name": "Spectrum Analyzer",
+      "branch": "electronics",
+      "year": 4,
+      "semester": 7,
+      "definition": "A spectrum analyzer measures and displays the frequency spectrum of signals, showing signal power versus frequency rather than voltage versus time.",
+      "working_principle": "Superheterodyne technique: Input signal mixed with local oscillator, filtered, detected. Sweeping LO scans frequency range. Displays amplitude vs frequency.",
+      "main_parts": [
+        "Input Attenuator",
+        "Mixer",
+        "Local Oscillator",
+        "IF Filter",
+        "Detector",
+        "Display",
+        "Sweep Generator",
+        "RBW Filter"
+      ],
+      "applications": [
+        "RF signal analysis",
+        "EMI/EMC testing",
+        "Harmonics measurement",
+        "Modulation analysis",
+        "Spectrum monitoring",
+        "Antenna testing",
+        "Filter characterization"
+      ],
+      "exam_notes": "Key parameters: Frequency range, Resolution Bandwidth (RBW), Noise floor, Dynamic range. Types: Swept-tuned, FFT-based, Real-time. Markers, Peak search. Applications: Wireless, Radar, Satellite communications.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "0be73fbc-bc55-4420-ada0-cfb91727caab",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe5"
+    },
+    {
+      "name": "LCR Meter",
+      "branch": "electronics",
+      "year": 2,
+      "semester": 4,
+      "definition": "An LCR meter measures inductance (L), capacitance (C), and resistance (R) of electronic components with high accuracy across various frequencies.",
+      "working_principle": "Applies AC test signal of known frequency and amplitude to component. Measures resulting voltage and phase. Calculates impedance, then L, C, or R from impedance and phase.",
+      "main_parts": [
+        "Signal Generator",
+        "Bridge Circuit",
+        "Phase Detector",
+        "Display",
+        "Test Terminals",
+        "Frequency Selector",
+        "Microcontroller"
+      ],
+      "applications": [
+        "Component testing and sorting",
+        "Quality control",
+        "Impedance measurement",
+        "Q factor measurement",
+        "ESR measurement",
+        "Transformer testing"
+      ],
+      "exam_notes": "Test frequencies: 100Hz to 100kHz typical. Parameters measured: L, C, R, Z, D (dissipation), Q (quality factor), ESR (equivalent series resistance). Series/Parallel mode. Kelvin (4-wire) probes for accuracy.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "57353c61-e155-44a0-829c-60121b305b6e",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe6"
+    },
+    {
+      "name": "Hot Air Rework Station",
+      "branch": "electronics",
+      "year": 2,
+      "semester": 4,
+      "definition": "A hot air rework station uses controlled heated air flow to remove and install surface mount components on PCBs without damaging surrounding components.",
+      "working_principle": "Heater element warms air, fan blows it through nozzle. Temperature and airflow controlled independently. Focused hot air melts solder for component removal/placement.",
+      "main_parts": [
+        "Hot Air Gun",
+        "Heating Element",
+        "Blower/Fan",
+        "Temperature Control",
+        "Air Flow Control",
+        "Nozzles (various sizes)",
+        "Stand",
+        "Soldering Iron (combo units)"
+      ],
+      "applications": [
+        "SMD component removal",
+        "SMD component installation",
+        "Desoldering ICs",
+        "Heat shrink tubing",
+        "Plastic welding",
+        "Phone/tablet repair"
+      ],
+      "exam_notes": "Temperature range: 100-500\u00b0C. Air flow: 1-99 L/min adjustable. Nozzle sizes for different component sizes. Lead-free temperatures higher. Preheat PCB to avoid thermal shock. ESD-safe models.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "1fff7d68-046b-4c28-94c2-80c5ba5c5c77",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe7"
+    },
+    {
+      "name": "IC Tester",
+      "branch": "electronics",
+      "year": 3,
+      "semester": 5,
+      "definition": "An IC tester is a device that verifies the functionality of integrated circuits by applying test patterns and comparing outputs with expected results.",
+      "working_principle": "Applies input test vectors to IC pins, reads outputs, compares with truth table or expected patterns. Indicates pass/fail for each test condition.",
+      "main_parts": [
+        "Test Socket/ZIF Socket",
+        "Pattern Generator",
+        "Comparator Logic",
+        "Power Supply",
+        "Display",
+        "IC Library Database",
+        "Control Interface"
+      ],
+      "applications": [
+        "IC quality control",
+        "Component verification before use",
+        "Troubleshooting",
+        "Educational labs",
+        "Sorting good/bad ICs"
+      ],
+      "exam_notes": "Types: Logic IC tester (digital), Analog IC tester, Universal IC tester. Tests: Truth table verification, Propagation delay, Fan-out. Common ICs: 74xx series, 40xx CMOS, Timers, Op-amps.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "88537f89-0aa0-4abe-bdca-6d918e5f16b5",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe8"
+    },
+    {
+      "name": "Microcontroller Development Board",
+      "branch": "electronics",
+      "year": 3,
+      "semester": 5,
+      "definition": "A microcontroller development board is a PCB containing a microcontroller along with support circuitry, programmer/debugger interface, and I/O connections for prototyping embedded systems.",
+      "working_principle": "Microcontroller executes programmed instructions. Support circuits provide power regulation, clock, reset. GPIO pins connect to external components. USB/Serial interface for programming.",
+      "main_parts": [
+        "Microcontroller IC",
+        "Voltage Regulator",
+        "Crystal Oscillator",
+        "Reset Circuit",
+        "USB-to-Serial Converter",
+        "GPIO Headers",
+        "LED indicators",
+        "Programming Interface"
+      ],
+      "applications": [
+        "Embedded system prototyping",
+        "IoT projects",
+        "Robotics",
+        "Automation",
+        "Data acquisition",
+        "Control systems",
+        "Learning embedded programming"
+      ],
+      "exam_notes": "Popular platforms: Arduino (ATmega328P, ARM Cortex), ESP32/ESP8266 (WiFi), STM32 (ARM), Raspberry Pi Pico (RP2040). IDEs: Arduino IDE, Keil, STM32CubeIDE. Protocols: GPIO, UART, SPI, I2C, PWM, ADC.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "11308858-8b62-49e0-987b-ba741c25412c",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fe9"
+    },
+    {
+      "name": "FPGA Development Board",
+      "branch": "electronics",
+      "year": 4,
+      "semester": 7,
+      "definition": "An FPGA development board contains a Field-Programmable Gate Array chip along with peripherals, interfaces, and I/O for designing and testing digital logic circuits.",
+      "working_principle": "FPGA configured using HDL (Verilog/VHDL). Logic blocks and interconnects programmed to implement custom digital circuits. Reconfigurable for different designs.",
+      "main_parts": [
+        "FPGA Chip",
+        "Configuration Memory",
+        "Clock Sources",
+        "GPIO/Expansion Headers",
+        "USB JTAG Programmer",
+        "RAM/Flash Memory",
+        "ADC/DAC (some boards)",
+        "Display interfaces"
+      ],
+      "applications": [
+        "Digital circuit design",
+        "Signal processing",
+        "Custom hardware acceleration",
+        "Protocol implementation",
+        "Image processing",
+        "High-speed interfacing",
+        "Research"
+      ],
+      "exam_notes": "Popular FPGAs: Xilinx (Artix, Spartan), Intel/Altera (Cyclone, MAX). HDL: Verilog, VHDL, SystemVerilog. Tools: Vivado, Quartus. LUTs, Flip-flops, Block RAM, DSP blocks. Soft processors (MicroBlaze, NIOS).",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "77080ed6-5146-4ca8-95b9-18aa8346f0b1",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fea"
+    },
+    {
+      "name": "Digital Storage Oscilloscope (DSO)",
+      "branch": "electronics",
+      "year": 3,
+      "semester": 5,
+      "definition": "A Digital Storage Oscilloscope (DSO) is an advanced oscilloscope that digitizes analog signals using ADCs, stores them in memory, and displays on digital screen with extensive analysis features.",
+      "working_principle": "Input signal sampled by high-speed ADC, converted to digital data, stored in memory. DSP processes data. Microcontroller manages display, measurements, and user interface.",
+      "main_parts": [
+        "Input Amplifier/Attenuator",
+        "High-Speed ADC",
+        "Acquisition Memory",
+        "DSP",
+        "Microcontroller",
+        "LCD/TFT Display",
+        "Trigger System",
+        "USB/Ethernet Interface"
+      ],
+      "applications": [
+        "Complex waveform capture",
+        "Single-shot events",
+        "Pre-trigger capture",
+        "FFT analysis",
+        "Serial bus decoding",
+        "Mask testing",
+        "Advanced measurements"
+      ],
+      "exam_notes": "Advantages over analog: Storage, pre-trigger, math functions, automated measurements. Sampling: Real-time, Equivalent-time. Sample rate vs Bandwidth (5-10x rule). Aliasing. Record length. FFT for frequency domain.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "74c8d1ec-293e-47b6-84db-fc8522df5984",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5feb"
+    },
+    {
+      "name": "PCB Etching System",
+      "branch": "electronics",
+      "year": 2,
+      "semester": 3,
+      "definition": "A PCB etching system removes unwanted copper from printed circuit boards using chemical etchants, leaving only the desired circuit traces.",
+      "working_principle": "Etchant (Ferric Chloride or Ammonium Persulfate) chemically dissolves exposed copper. Resist (photoresist or marker) protects desired traces. Agitation speeds up process.",
+      "main_parts": [
+        "Etching Tank",
+        "Heater (optional)",
+        "Bubbler/Agitator",
+        "Etchant Solution",
+        "Drain",
+        "Fume Hood/Ventilation"
+      ],
+      "applications": [
+        "PCB prototyping",
+        "Custom circuit board fabrication",
+        "Educational projects",
+        "Small-batch production",
+        "Repair and modification"
+      ],
+      "exam_notes": "Methods: Chemical etching (FeCl3, CuCl2), Photo-etching (UV exposure + developer). Steps: Design \u2192 Print \u2192 Transfer \u2192 Etch \u2192 Drill \u2192 Solder. Etch rate depends on temperature, concentration, agitation. Disposal of waste etchant.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "8c2dd174-b0c4-4b5b-abbd-57645d307452",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fec"
+    },
+    {
+      "name": "UV PCB Exposure Unit",
+      "branch": "electronics",
+      "year": 3,
+      "semester": 5,
+      "definition": "A UV exposure unit transfers circuit patterns onto photosensitive PCB boards by exposing them to ultraviolet light through a photomask.",
+      "working_principle": "UV light passes through transparent areas of photomask/film, exposing photoresist on copper board. Exposed areas harden (negative resist) or soften (positive resist). Developer removes soft resist.",
+      "main_parts": [
+        "UV Lamps (350-400nm)",
+        "Glass Exposure Surface",
+        "Foam Pad",
+        "Timer",
+        "Reflector",
+        "Vacuum Frame (advanced)"
+      ],
+      "applications": [
+        "PCB photoresist exposure",
+        "High-resolution PCB fabrication",
+        "Double-sided PCB making",
+        "Professional prototyping"
+      ],
+      "exam_notes": "Exposure time: 1-10 minutes depending on lamp power, resist type, distance. Photoresist types: Positive (exposed area removed), Negative (exposed area remains). Resolution: Fine traces <0.2mm possible. Transparency film vs Acetate for mask.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "3cebda8d-1436-4f4e-92d6-2607fd2db129",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fed"
+    },
+    {
+      "name": "Signal Generator (RF)",
+      "branch": "electronics",
+      "year": 4,
+      "semester": 7,
+      "definition": "An RF signal generator produces high-frequency signals with precise frequency, amplitude, and modulation for testing and characterizing RF and microwave circuits.",
+      "working_principle": "Phase-Locked Loop (PLL) synthesizer generates stable frequency. Modulation circuits add AM, FM, or phase modulation. Output amplitude precisely controlled.",
+      "main_parts": [
+        "PLL Synthesizer",
+        "VCO (Voltage Controlled Oscillator)",
+        "Reference Oscillator",
+        "Modulator",
+        "Output Amplifier/Attenuator",
+        "Display",
+        "Control Interface"
+      ],
+      "applications": [
+        "RF circuit testing",
+        "Receiver sensitivity testing",
+        "Transmitter calibration",
+        "Antenna testing",
+        "EMI testing",
+        "Communication system testing"
+      ],
+      "exam_notes": "Frequency range: kHz to GHz. Modulation types: AM, FM, PM, Pulse. Output level: -140dBm to +20dBm typical. Specs: Frequency accuracy, Phase noise, Harmonics. Vector signal generators for complex modulation.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "1f72b43e-42dc-46bf-b4fb-b6f12bac96d4",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fee"
+    },
+    {
+      "name": "Network Analyzer (VNA)",
+      "branch": "electronics",
+      "year": 4,
+      "semester": 8,
+      "definition": "A Vector Network Analyzer (VNA) measures the network parameters (S-parameters) of RF and microwave components, characterizing their amplitude and phase response.",
+      "working_principle": "Sweeps frequency, measures incident and reflected signals at ports. Calculates S-parameters (S11, S12, S21, S22) showing gain, loss, match, and isolation.",
+      "main_parts": [
+        "RF Source",
+        "Signal Separator (Directional Coupler)",
+        "Test Set",
+        "Receivers",
+        "Display",
+        "Calibration Standards",
+        "Processor"
+      ],
+      "applications": [
+        "Amplifier characterization",
+        "Filter testing",
+        "Antenna impedance matching",
+        "Cable/connector testing",
+        "Component S-parameter measurement",
+        "Smith chart analysis"
+      ],
+      "exam_notes": "Ports: 2-port (most common), 4-port. S-parameters: S11 (input return loss), S21 (forward transmission), S12 (reverse transmission), S22 (output return loss). Smith chart plots impedance. Calibration: SOLT, TRL.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "7c54e75f-ca76-4f0c-bb9b-52392eeac2d9",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5fef"
+    },
+    {
+      "name": "Power Quality Analyzer",
+      "branch": "electronics",
+      "year": 4,
+      "semester": 7,
+      "definition": "A power quality analyzer monitors and records electrical power parameters to detect and analyze disturbances, harmonics, and power quality issues.",
+      "working_principle": "Simultaneously samples voltage and current waveforms at high speed. Calculates RMS, harmonics, power, power factor, flicker, transients, and other parameters. Records events.",
+      "main_parts": [
+        "Voltage Input Channels",
+        "Current Input (CTs)",
+        "High-Speed ADCs",
+        "DSP Processor",
+        "Memory/Storage",
+        "Display",
+        "Communication Ports"
+      ],
+      "applications": [
+        "Power quality surveys",
+        "Harmonic analysis",
+        "Voltage sag/swell detection",
+        "Transient capture",
+        "Energy audits",
+        "Troubleshooting electrical systems"
+      ],
+      "exam_notes": "Measurements: THD, Individual harmonics, Voltage flicker, Sag, Swell, Interruption, Unbalance. Standards: IEC 61000, IEEE 519. Class A, Class S instruments. Phasor diagrams, Trend analysis, Event capture.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "42c1ddc2-7afb-44c2-a823-b1790a31d385",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5ff0"
+    },
+    {
+      "name": "Thermal Imaging Camera",
+      "branch": "electronics",
+      "year": 4,
+      "semester": 8,
+      "definition": "A thermal imaging camera detects infrared radiation (heat) and creates visual images showing temperature distribution, useful for identifying hot spots in electronic circuits.",
+      "working_principle": "Infrared detector array senses thermal radiation from objects. Electronics convert to electrical signals. Image processor creates false-color thermal image based on temperature.",
+      "main_parts": [
+        "IR Detector Array",
+        "Lens System",
+        "Signal Processing",
+        "Display",
+        "Temperature Calibration",
+        "Battery",
+        "Storage"
+      ],
+      "applications": [
+        "PCB debugging (hot components)",
+        "Power electronics testing",
+        "Connector inspection",
+        "Building thermography",
+        "Electrical panel inspection",
+        "Preventive maintenance"
+      ],
+      "exam_notes": "Resolution: 80\u00d760 to 640\u00d7480 pixels. Temperature range: -20\u00b0C to +400\u00b0C typical. Thermal sensitivity: <0.1\u00b0C. Emissivity correction. Applications: Finding shorts, overheating components, poor connections.",
+      "image_url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "id": "b7127e8d-89be-47a8-9065-72147ed2280a",
+      "created_at": "2026-07-21T09:22:53.511533+00:00",
+      "updated_at": "2026-07-21T09:22:53.511533+00:00",
+      "_id": "6a5f3a6dbb54d5d6472f5ff1"
+    }
+  ],
+  "users": [
+    {
+      "_id": "6a5f3b0f17dd41a0694103e5",
+      "email": "admin@engitech.com",
+      "password_hash": "$2b$12$RYNZMIK4EtgQCeCGXOldyuaWQSyVp92dxHrfKf0Td5X4cRp/WOMjK",
+      "name": "Admin",
+      "role": "admin",
+      "bookmarks": [],
+      "created_at": "2026-07-21T09:25:35.232483+00:00"
+    },
+    {
+      "_id": "6a5f3bab17dd41a0694103e7",
+      "email": "anujkumar170705@gmail.com",
+      "password_hash": "$2b$12$Xtwf/UiGYPl6RBkZgbOIGO/C0jp4CQRNM9QX7NoRBseXtxYK0HWWe",
+      "name": "Anuj",
+      "role": "user",
+      "bookmarks": [],
+      "created_at": "2026-07-21T09:28:11.691145+00:00"
+    }
+  ],
+  "login_attempts": []
+}

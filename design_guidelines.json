@@ -1,0 +1,95 @@
+{
+  "theme": "Archetype 4: Swiss & High-Contrast (Light Theme)",
+  "vibe": "Objective, rigid, functional, academic, structural. Exposing the technical skeleton of the UI.",
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#F9F9F9",
+    "surface_hover": "#F0F0F0",
+    "text_primary": "#0A0A0A",
+    "text_secondary": "#525252",
+    "border": "#E5E5E5",
+    "primary": "#002FA7",
+    "primary_hover": "#00227A",
+    "accent_red": "#FF3B30",
+    "accent_yellow": "#FFD60A",
+    "success": "#28A745",
+    "warning": "#FFC107",
+    "error": "#DC3545",
+    "black": "#0A0A0A",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "font_heading": "Clash Display, sans-serif",
+    "font_body": "IBM Plex Sans, sans-serif",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-medium text-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium text-black",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium text-black",
+      "h4": "text-lg sm:text-xl font-medium text-black",
+      "body": "text-base leading-relaxed text-secondary",
+      "overline": "text-xs uppercase tracking-[0.2em] font-bold text-primary",
+      "labels": "text-sm font-medium text-primary"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');",
+      "@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');"
+    ]
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-1, p-2, p-4, p-6, p-8, p-12, p-16",
+    "grid_strategy": "MODE B: The 'Control Room' Grid. Strict grid hierarchy, dense and compact, functional.",
+    "borders": "Expose the skeleton. Visible 1px grid borders (border-black/10 or border-border). Sharp edges (rounded-none).",
+    "alignment": "Left-align dense content. Optical alignment. Generous spacing within containers.",
+    "surfaces": "Grid Borders (The 'Technical' Look). Use border-collapse style layouts."
+  },
+  "components": {
+    "cards": "Flat background, 1px solid border (border-border), no shadow, rounded-none. Hover: border color darkens, slight lift (-translate-y-1), harsh drop shadow like shadow-[4px_4px_0px_#0A0A0A] for a brutalist edge.",
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary_hover rounded-none font-medium px-6 py-3 transition-colors",
+      "secondary": "bg-transparent border border-black text-black hover:bg-black hover:text-white rounded-none font-medium px-6 py-3 transition-colors",
+      "accent": "bg-accent_yellow text-black border border-black rounded-none hover:bg-yellow-400 px-6 py-3 transition-colors"
+    },
+    "inputs": "rounded-none border-border focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none",
+    "navigation": "Solid background, hard bottom border. Links with sharp hover states.",
+    "badges": "rounded-none border border-black text-xs font-bold uppercase tracking-wider px-2 py-1 bg-white text-black"
+  },
+  "media": {
+    "mechanical_engineering": {
+      "url": "https://images.pexels.com/photos/19658259/pexels-photo-19658259.jpeg",
+      "description": "Black and white photo showing close-up of metal gears in an engine, perfect for mechanical branch header/card."
+    },
+    "electrical_engineering": {
+      "url": "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg",
+      "description": "Detailed shot of capacitors and resistors on a circuit board, perfect for electrical branch header/card."
+    },
+    "civil_engineering": {
+      "url": "https://images.pexels.com/photos/8470842/pexels-photo-8470842.jpeg",
+      "description": "Top view of architectural blueprint with helmet and tools, ideal for civil engineering branch header/card."
+    },
+    "electronics_engineering": {
+      "url": "https://images.pexels.com/photos/7286016/pexels-photo-7286016.jpeg",
+      "description": "Technician skillfully soldering electronics with precision tools, ideal for electronics branch header/card."
+    },
+    "general_engineering": {
+      "url": "https://images.pexels.com/photos/32180173/pexels-photo-32180173.jpeg",
+      "description": "Detailed view of a vintage industrial machine gear showcasing complex mechanical components."
+    }
+  },
+  "icons": {
+    "library": "@phosphor-icons/react",
+    "style": "Regular or Bold weight, sharp, functional. Good for dense dashboards."
+  },
+  "instructions_to_main_agent": [
+    "Install @phosphor-icons/react for icons.",
+    "Use Shadcn UI components but heavily override them to remove all border-radius (rounded-none) and soft shadows. Use sharp 1px borders.",
+    "Apply Archetype 4 (Swiss & High-Contrast). Avoid gradients and soft blur. Use solid colors and stark contrasts.",
+    "Every key informational and interactive element MUST have a data-testid attribute (e.g., data-testid='branch-mechanical-card').",
+    "Do NOT use HTML <select> or <input type='date'>. Use Shadcn Dropdown, Select, etc.",
+    "For the equipment detail view, utilize a strict grid layout displaying Definition, Working Principle, Main Parts, Applications, and Notes. A Bento grid or 'Control Room' grid is preferred.",
+    "Implement the layout with pure Tailwind CSS. Maintain a responsive mobile-first approach but utilize grid-cols-1 md:grid-cols-3 lg:grid-cols-4 for lists.",
+    "Header must have a solid background with a 1px border-b. Do NOT use transparent backgrounds for the header.",
+    "For hover states on cards, use a brutalist shadow: shadow-[4px_4px_0px_#0A0A0A] and border-black.",
+    "Do NOT use 'Inter' for headings. Use Clash Display, imported via Google/Fontshare API in CSS.",
+    "Focus heavily on the 'Gen Z Engagement' aspect by employing this brutalist, high-contrast, bold-typography aesthetic instead of a boring generic template."
+  ]
+}
