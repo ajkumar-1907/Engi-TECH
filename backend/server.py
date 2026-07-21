@@ -48,7 +48,7 @@ else:
             use_mock = True
 
 if use_mock:
-    from mock_mongo import MockAsyncIOMotorClient
+    from backend.mock_mongo import MockAsyncIOMotorClient
     client = MockAsyncIOMotorClient(mongo_url)
     logging.info("Using mock MongoDB driver because local/remote MongoDB is unavailable.")
 else:
