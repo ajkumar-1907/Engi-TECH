@@ -36,8 +36,6 @@ use_mock = False
 
 if AsyncIOMotorClient is None:
     use_mock = True
-elif "cluster0.fun0itq.mongodb.net" in mongo_url:
-    use_mock = True
 else:
     # If using local default mongo, check if port is open
     if mongo_url.startswith("mongodb://localhost") or mongo_url.startswith("mongodb://127.0.0.1"):
