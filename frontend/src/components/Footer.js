@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useAuth } from '../contexts/AuthContext';
 
 const TitleCell = ({ label, value, className = '' }) => (
   <div className={`border border-border px-3 py-2 sm:px-4 sm:py-3 ${className}`}>
@@ -9,6 +10,7 @@ const TitleCell = ({ label, value, className = '' }) => (
 );
 
 const Footer = () => {
+  const { user } = useAuth();
   const year = new Date().getFullYear();
   return (
     <footer className="border-t-2 border-border bg-surface mt-auto blueprint-grid">
@@ -37,8 +39,11 @@ const Footer = () => {
             <h4 className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-primary mb-3 dim-line">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="/" className="text-xs sm:text-sm text-secondary hover:text-primary transition-colors">Home</a></li>
-              <li><a href="/login" className="text-xs sm:text-sm text-secondary hover:text-primary transition-colors">Login</a></li>
-              <li><a href="/dashboard" className="text-xs sm:text-sm text-secondary hover:text-primary transition-colors">Dashboard</a></li>
+              {user ? (
+                <li><a href="/dashboard" className="text-xs sm:text-sm text-secondary hover:text-primary transition-colors">Dashboard</a></li>
+              ) : (
+                <li><a href="/login" className="text-xs sm:text-sm text-secondary hover:text-primary transition-colors">Login</a></li>
+              )}
             </ul>
           </div>
 
