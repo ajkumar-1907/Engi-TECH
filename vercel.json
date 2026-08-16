@@ -14,17 +14,9 @@
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/server.py"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "frontend/index.html"
-    }
+    { "src": "/api/(.*)", "dest": "backend/server.py" },
+    { "src": "/(.*\\.\\w+)", "dest": "frontend/$1" },
+    { "src": "/(.*)", "dest": "frontend/index.html" }
   ],
   "env": {
     "NODE_VERSION": "18"
