@@ -87,7 +87,10 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 
 # JWT Token Management
 def get_jwt_secret() -> str:
-    return os.environ["JWT_SECRET"]
+    secret = os.environ.get("JWT_SECRET")
+    if not secret:
+        raise HTTPException(status_code=500, detail="JWT_SECRET is not set on the server")
+    return secret
 
 def create_access_token(user_id: str, email: str, remember_me: bool = False) -> str:
     expiry = timedelta(days=30) if remember_me else timedelta(minutes=15)
