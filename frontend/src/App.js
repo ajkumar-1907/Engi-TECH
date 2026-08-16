@@ -8,6 +8,10 @@ import Footer from './components/Footer';
 import ProtectedRoute from './components/ProtectedRoute';
 import LandingPage from './pages/LandingPage';
 import AuthPage from './pages/AuthPage';
+import GithubCallbackPage from './pages/GithubCallbackPage';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ResetPasswordPage from './pages/ResetPasswordPage';
+import VerifyEmailPage from './pages/VerifyEmailPage';
 import EquipmentListPage from './pages/EquipmentListPage';
 import EquipmentDetailPage from './pages/EquipmentDetailPage';
 import UserDashboard from './pages/UserDashboard';
@@ -45,6 +49,10 @@ function App() {
             <div className="flex-1">
               <Routes>
                 <Route path="/login" element={<AuthPage />} />
+                <Route path="/auth/github/callback" element={<GithubCallbackPage />} />
+                <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+                <Route path="/reset-password" element={<ResetPasswordPage />} />
+                <Route path="/verify-email" element={<VerifyEmailPage />} />
                 <Route
                   path="/"
                   element={

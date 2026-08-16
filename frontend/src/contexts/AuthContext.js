@@ -70,8 +70,68 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const googleLogin = async (credential) => {
+    try {
+      const { data } = await axios.post(`${API_URL}/api/auth/google`, { credential }, { withCredentials: true });
+      setUser(data);
+      return { success: true };
+    } catch (error) {
+      return { success: false, error: formatApiErrorDetail(error.response?.data?.detail) || error.message };
+    }
+  };
+
+  const githubLogin = async (code) => {
+    try {
+      const { data } = await axios.post(`${API_URL}/api/auth/github`, { code }, { withCredentials: true });
+      setUser(data);
+      return { success: true };
+    } catch (error) {
+      return { success: false, error: formatApiErrorDetail(error.response?.data?.detail) || error.message };
+    }
+  };
+
+  const forgotPassword = async (email) => {
+    try {
+      const { data } = await axios.post(`${API_URL}/api/auth/forgot-password`, { email });
+      return { success: true, message: data.message };
+    } catch (error) {
+      return { success: false, error: formatApiErrorDetail(error.response?.data?.detail) || error.message };
+    }
+  };
+
+  const resetPassword = async (token, newPassword) => {
+    try {
+      const { data } = await axios.post(`${API_URL}/api/auth/reset-password`, { token, new_password: newPassword });
+      return { success: true, message: data.message };
+    } catch (error) {
+      return { success: false, error: formatApiErrorDetail(error.response?.data?.detail) || error.message };
+    }
+  };
+
+  const verifyEmail = async (token) => {
+    try {
+      const { data } = await axios.post(`${API_URL}/api/auth/verify-email`, { token });
+      await checkAuth();
+      return { success: true, message: data.message };
+    } catch (error) {
+      return { success: false, error: formatApiErrorDetail(error.response?.data?.detail) || error.message };
+    }
+  };
+
+  const resendVerification = async () => {
+    try {
+      const { data } = await axios.post(`${API_URL}/api/auth/resend-verification`, {}, { withCredentials: true });
+      return { success: true, message: data.message };
+    } catch (error) {
+      return { success: false, error: formatApiErrorDetail(error.response?.data?.detail) || error.message };
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ user, loading, login, register, logout, checkAuth }}>
+    <AuthContext.Provider value={{
+      user, loading, login, register, logout, checkAuth,
+      googleLogin, githubLogin, forgotPassword, resetPassword, verifyEmail, resendVerification
+    }}>
       {children}
     </AuthContext.Provider>
   );

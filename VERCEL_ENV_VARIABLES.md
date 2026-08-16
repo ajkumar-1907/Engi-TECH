@@ -10,14 +10,23 @@ REACT_APP_BACKEND_URL=https://engitech-backend.vercel.app
 ```
 
 ### Backend Environment Variables
+> ⚠️ Real values used to be committed here in plaintext. They've been rotated
+> and removed — set the actual values only in the Vercel dashboard, never in
+> this file. See `AUTH_SETUP.md` step 0.
 ```env
-MONGO_URL=mongodb+srv://anujkumar170705_db_user:Anujkumar0917@cluster0.fun0itq.mongodb.net/engitech?retryWrites=true&w=majority&appName=Cluster0
+MONGO_URL=<set in Vercel dashboard only>
 DB_NAME=engitech
-JWT_SECRET=a1b2c3d4e5f6789012345678901234567890abcdef123456
-ADMIN_EMAIL=admin@engitech.com
-ADMIN_PASSWORD=admin123
+JWT_SECRET=<set in Vercel dashboard only — generate with `openssl rand -hex 32`>
+ADMIN_EMAIL=<set in Vercel dashboard only>
+ADMIN_PASSWORD=<set in Vercel dashboard only>
 CORS_ORIGINS=https://engi-tech-1auw-one.vercel.app,https://engi-tech-1auw-one.vercel.app/login
 FRONTEND_URL=https://engi-tech-1auw-one.vercel.app
+GOOGLE_CLIENT_ID=<set in Vercel dashboard only>
+GITHUB_CLIENT_ID=<set in Vercel dashboard only>
+GITHUB_CLIENT_SECRET=<set in Vercel dashboard only>
+GITHUB_REDIRECT_URI=https://engi-tech-1auw-one.vercel.app/auth/github/callback
+RESEND_API_KEY=<set in Vercel dashboard only>
+RESEND_FROM_EMAIL=EngiTech <onboarding@resend.dev>
 ```
 
 ## 🔧 After Adding Environment Variables

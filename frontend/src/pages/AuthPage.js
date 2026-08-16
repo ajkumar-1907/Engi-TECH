@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
@@ -18,8 +18,48 @@ const AuthPage = () => {
   const [loginLoading, setLoginLoading] = useState(false);
   const [registerLoading, setRegisterLoading] = useState(false);
   
-  const { login, register } = useAuth();
+  const { login, register, googleLogin } = useAuth();
   const navigate = useNavigate();
+  const googleBtnRef = useRef(null);
+  const [socialError, setSocialError] = useState('');
+  const [socialLoading, setSocialLoading] = useState(false);
+
+  const handleGoogleResponse = async (googleResponse) => {
+    setSocialError('');
+    setSocialLoading(true);
+    const result = await googleLogin(googleResponse.credential);
+    if (result.success) {
+      navigate('/');
+    } else {
+      setSocialError(result.error);
+    }
+    setSocialLoading(false);
+  };
+
+  useEffect(() => {
+    if (window.google?.accounts?.id && googleBtnRef.current && process.env.REACT_APP_GOOGLE_CLIENT_ID) {
+      window.google.accounts.id.initialize({
+        client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+        callback: handleGoogleResponse,
+      });
+      window.google.accounts.id.renderButton(googleBtnRef.current, {
+        theme: 'outline', size: 'large', width: 336, text: 'continue_with',
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleGithubLogin = () => {
+    const state = window.crypto?.randomUUID ? window.crypto.randomUUID() : Math.random().toString(36).slice(2);
+    sessionStorage.setItem('gh_oauth_state', state);
+    const params = new URLSearchParams({
+      client_id: process.env.REACT_APP_GITHUB_CLIENT_ID || '',
+      redirect_uri: process.env.REACT_APP_GITHUB_REDIRECT_URI || '',
+      scope: 'read:user user:email',
+      state,
+    });
+    window.location.href = `https://github.com/login/oauth/authorize?${params.toString()}`;
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -69,6 +109,30 @@ const AuthPage = () => {
           </p>
         </div>
 
+        <div className="mb-4 sm:mb-6 space-y-3">
+          <div className="flex justify-center" ref={googleBtnRef} data-testid="google-signin-button" />
+          <Button
+            type="button"
+            onClick={handleGithubLogin}
+            disabled={socialLoading}
+            variant="outline"
+            className="w-full rounded-none border-2 border-border font-mono uppercase tracking-wider text-xs py-3"
+            data-testid="github-signin-button"
+          >
+            Continue with GitHub
+          </Button>
+          {socialError && (
+            <div className="border border-destructive bg-destructive/5 p-3 rounded-none" data-testid="social-error">
+              <p className="text-sm text-destructive">{socialError}</p>
+            </div>
+          )}
+          <div className="flex items-center gap-3 pt-1">
+            <div className="flex-1 h-px bg-border" />
+            <span className="text-xs font-mono uppercase tracking-wider text-secondary">or</span>
+            <div className="flex-1 h-px bg-border" />
+          </div>
+        </div>
+
         <Tabs defaultValue="login" className="w-full">
           <TabsList className="grid w-full grid-cols-2 rounded-none border-2 border-border mb-4 sm:mb-6 font-mono uppercase tracking-wider text-xs">
             <TabsTrigger value="login" className="rounded-none" data-testid="login-tab">Login</TabsTrigger>
@@ -102,6 +166,11 @@ const AuthPage = () => {
                     className="mt-2 rounded-none border-border focus:border-primary"
                     data-testid="login-password-input"
                   />
+                </div>
+                <div className="flex items-center justify-between">
+                  <Link to="/forgot-password" className="text-xs text-primary hover:underline font-mono" data-testid="forgot-password-link">
+                    Forgot password?
+                  </Link>
                 </div>
                 <div className="flex items-center">
                   <input

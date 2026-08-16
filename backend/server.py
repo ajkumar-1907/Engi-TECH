@@ -21,6 +21,14 @@ from datetime import datetime, timezone, timedelta
 import bcrypt
 import jwt
 import secrets
+import hashlib
+import httpx
+from google.oauth2 import id_token as google_id_token
+from google.auth.transport import requests as google_requests
+try:
+    from backend.email_service import send_email, verification_email_html, reset_email_html
+except ImportError:
+    from email_service import send_email, verification_email_html, reset_email_html
 
 # MongoDB connection
 mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
@@ -88,6 +96,23 @@ def create_access_token(user_id: str, email: str, remember_me: bool = False) -> 
     payload = {"sub": user_id, "email": email, "exp": datetime.now(timezone.utc) + expiry, "type": "access"}
     return jwt.encode(payload, get_jwt_secret(), algorithm=JWT_ALGORITHM)
 
+def hash_token(raw_token: str) -> str:
+    """Reset/verification tokens are stored hashed, same idea as passwords —
+    if the DB leaks, the raw links people clicked don't leak with it."""
+    return hashlib.sha256(raw_token.encode("utf-8")).hexdigest()
+
+async def issue_email_verification(user_id, email: str, name: str):
+    raw_token = secrets.token_urlsafe(32)
+    await db.email_verifications.insert_one({
+        "user_id": user_id,
+        "token_hash": hash_token(raw_token),
+        "expires_at": datetime.now(timezone.utc) + timedelta(hours=24),
+        "used": False,
+        "created_at": datetime.now(timezone.utc),
+    })
+    link = f"{os.environ.get('FRONTEND_URL', '')}/verify-email?token={raw_token}"
+    await send_email(email, "Verify your EngiTech email", verification_email_html(name, link))
+
 def create_refresh_token(user_id: str, remember_me: bool = False) -> str:
     expiry = timedelta(days=90) if remember_me else timedelta(days=7)
     payload = {"sub": user_id, "exp": datetime.now(timezone.utc) + expiry, "type": "refresh"}
@@ -139,6 +164,25 @@ class UserResponse(BaseModel):
     name: str
     role: str
     bookmarks: List[str] = []
+    is_verified: bool = False
+    oauth_provider: Optional[str] = None
+    avatar_url: Optional[str] = None
+
+class GoogleAuthRequest(BaseModel):
+    credential: str  # Google ID token (JWT) from the frontend Sign In With Google button
+
+class GithubAuthRequest(BaseModel):
+    code: str  # OAuth authorization code from GitHub's redirect
+
+class ForgotPasswordRequest(BaseModel):
+    email: EmailStr
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    new_password: str = Field(..., min_length=8)
+
+class VerifyEmailRequest(BaseModel):
+    token: str
 
 class EquipmentCreate(BaseModel):
     name: str
@@ -214,6 +258,10 @@ async def register(user_data: UserRegister, response: Response):
         "name": user_data.name,
         "role": "user",
         "bookmarks": [],
+        "is_verified": False,
+        "oauth_provider": None,
+        "oauth_id": None,
+        "avatar_url": None,
         "created_at": datetime.now(timezone.utc)
     }
     await db.users.insert_one(new_user)
@@ -226,7 +274,9 @@ async def register(user_data: UserRegister, response: Response):
     response.set_cookie(key="access_token", value=access_token, httponly=True, secure=False, samesite="lax", max_age=30*24*3600, path="/")
     response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, secure=False, samesite="lax", max_age=90*24*3600, path="/")
     
-    return {"_id": user_id, "email": email, "name": user_data.name, "role": "user", "bookmarks": []}
+    await issue_email_verification(new_user["_id"], email, user_data.name)
+    
+    return {"_id": user_id, "email": email, "name": user_data.name, "role": "user", "bookmarks": [], "is_verified": False, "oauth_provider": None, "avatar_url": None}
 
 @api_router.post("/auth/login")
 async def login(credentials: UserLogin, response: Response, request: Request):
@@ -241,6 +291,9 @@ async def login(credentials: UserLogin, response: Response, request: Request):
             raise HTTPException(status_code=429, detail="Too many failed attempts. Try again later.")
     
     user = await db.users.find_one({"email": email})
+    if user and not user.get("password_hash"):
+        provider = (user.get("oauth_provider") or "a social login").capitalize()
+        raise HTTPException(status_code=400, detail=f"This account signs in with {provider}. Use the '{provider}' button instead.")
     if not user or not verify_password(credentials.password, user["password_hash"]):
         # Increment failed attempts
         failed_count = attempt_doc["failed_count"] + 1 if attempt_doc else 1
@@ -267,7 +320,7 @@ async def login(credentials: UserLogin, response: Response, request: Request):
     response.set_cookie(key="access_token", value=access_token, httponly=True, secure=False, samesite="lax", max_age=max_age_access, path="/")
     response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, secure=False, samesite="lax", max_age=max_age_refresh, path="/")
     
-    return {"_id": user_id, "email": user["email"], "name": user["name"], "role": user["role"], "bookmarks": user.get("bookmarks", [])}
+    return {"_id": user_id, "email": user["email"], "name": user["name"], "role": user["role"], "bookmarks": user.get("bookmarks", []), "is_verified": user.get("is_verified", False), "oauth_provider": user.get("oauth_provider"), "avatar_url": user.get("avatar_url")}
 
 @api_router.post("/auth/logout")
 async def logout(response: Response):
@@ -278,6 +331,165 @@ async def logout(response: Response):
 @api_router.get("/auth/me")
 async def get_me(current_user: dict = Depends(get_current_user)):
     return current_user
+
+async def _login_or_create_oauth_user(email: str, name: str, provider: str, oauth_id: str, avatar_url: Optional[str], response: Response):
+    email = email.lower()
+    user = await db.users.find_one({"email": email})
+    if not user:
+        new_user = {
+            "_id": ObjectId(),
+            "email": email,
+            "password_hash": None,
+            "name": name,
+            "role": "user",
+            "bookmarks": [],
+            "is_verified": True,  # provider already verified the email
+            "oauth_provider": provider,
+            "oauth_id": oauth_id,
+            "avatar_url": avatar_url,
+            "created_at": datetime.now(timezone.utc)
+        }
+        await db.users.insert_one(new_user)
+        user = new_user
+    elif not user.get("oauth_provider"):
+        # Existing password account signing in with a matching-email provider for the first time — link it.
+        await db.users.update_one(
+            {"_id": user["_id"]},
+            {"$set": {"oauth_provider": provider, "oauth_id": oauth_id, "is_verified": True, "avatar_url": user.get("avatar_url") or avatar_url}}
+        )
+        user["oauth_provider"] = provider
+        user["is_verified"] = True
+
+    user_id = str(user["_id"])
+    access_token = create_access_token(user_id, email, remember_me=True)
+    refresh_token = create_refresh_token(user_id, remember_me=True)
+    response.set_cookie(key="access_token", value=access_token, httponly=True, secure=False, samesite="lax", max_age=30*24*3600, path="/")
+    response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, secure=False, samesite="lax", max_age=90*24*3600, path="/")
+
+    return {
+        "_id": user_id, "email": email, "name": user.get("name", name), "role": user.get("role", "user"),
+        "bookmarks": user.get("bookmarks", []), "is_verified": True,
+        "oauth_provider": user.get("oauth_provider", provider), "avatar_url": user.get("avatar_url", avatar_url)
+    }
+
+@api_router.post("/auth/google")
+async def google_auth(payload: GoogleAuthRequest, response: Response):
+    client_id = os.environ.get("GOOGLE_CLIENT_ID")
+    if not client_id:
+        raise HTTPException(status_code=500, detail="Google sign-in is not configured")
+    try:
+        idinfo = google_id_token.verify_oauth2_token(payload.credential, google_requests.Request(), client_id)
+    except ValueError:
+        raise HTTPException(status_code=401, detail="Invalid Google token")
+    if not idinfo.get("email_verified", True):
+        raise HTTPException(status_code=401, detail="Google email is not verified")
+    return await _login_or_create_oauth_user(
+        email=idinfo["email"], name=idinfo.get("name", idinfo["email"].split("@")[0]),
+        provider="google", oauth_id=idinfo["sub"], avatar_url=idinfo.get("picture"), response=response
+    )
+
+@api_router.post("/auth/github")
+async def github_auth(payload: GithubAuthRequest, response: Response):
+    client_id = os.environ.get("GITHUB_CLIENT_ID")
+    client_secret = os.environ.get("GITHUB_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        raise HTTPException(status_code=500, detail="GitHub sign-in is not configured")
+    async with httpx.AsyncClient(timeout=10) as http_client:
+        token_resp = await http_client.post(
+            "https://github.com/login/oauth/access_token",
+            data={
+                "client_id": client_id, "client_secret": client_secret,
+                "code": payload.code, "redirect_uri": os.environ.get("GITHUB_REDIRECT_URI", "")
+            },
+            headers={"Accept": "application/json"}
+        )
+        token_data = token_resp.json()
+        gh_token = token_data.get("access_token")
+        if not gh_token:
+            raise HTTPException(status_code=401, detail="GitHub authorization failed")
+
+        headers = {"Authorization": f"Bearer {gh_token}", "Accept": "application/vnd.github+json"}
+        user_resp = await http_client.get("https://api.github.com/user", headers=headers)
+        gh_user = user_resp.json()
+
+        email = gh_user.get("email")
+        if not email:
+            emails_resp = await http_client.get("https://api.github.com/user/emails", headers=headers)
+            emails = emails_resp.json() if emails_resp.status_code == 200 else []
+            primary = next((e for e in emails if e.get("primary") and e.get("verified")), None) \
+                or next((e for e in emails if e.get("verified")), None)
+            email = primary["email"] if primary else None
+        if not email:
+            raise HTTPException(status_code=400, detail="Couldn't get a verified email from GitHub. Make sure your GitHub account has a public or verified email.")
+
+    return await _login_or_create_oauth_user(
+        email=email, name=gh_user.get("name") or gh_user.get("login", email.split("@")[0]),
+        provider="github", oauth_id=str(gh_user["id"]), avatar_url=gh_user.get("avatar_url"), response=response
+    )
+
+@api_router.post("/auth/forgot-password")
+async def forgot_password(payload: ForgotPasswordRequest, request: Request):
+    email = payload.email.lower()
+    ip = request.client.host
+    identifier = f"reset:{ip}:{email}"
+
+    attempt_doc = await db.login_attempts.find_one({"identifier": identifier})
+    if attempt_doc and attempt_doc.get("locked_until") and attempt_doc["locked_until"] > datetime.now(timezone.utc):
+        raise HTTPException(status_code=429, detail="Too many reset requests. Try again later.")
+
+    failed_count = (attempt_doc["failed_count"] if attempt_doc else 0) + 1
+    locked_until = datetime.now(timezone.utc) + timedelta(minutes=15) if failed_count >= 5 else None
+    await db.login_attempts.update_one(
+        {"identifier": identifier},
+        {"$set": {"failed_count": failed_count, "locked_until": locked_until, "last_attempt": datetime.now(timezone.utc)}},
+        upsert=True
+    )
+
+    user = await db.users.find_one({"email": email})
+    # Always return the same message whether or not the account exists — don't leak which emails are registered.
+    if user and user.get("password_hash"):
+        raw_token = secrets.token_urlsafe(32)
+        await db.password_resets.insert_one({
+            "user_id": user["_id"],
+            "token_hash": hash_token(raw_token),
+            "expires_at": datetime.now(timezone.utc) + timedelta(minutes=30),
+            "used": False,
+            "created_at": datetime.now(timezone.utc)
+        })
+        link = f"{os.environ.get('FRONTEND_URL', '')}/reset-password?token={raw_token}"
+        await send_email(email, "Reset your EngiTech password", reset_email_html(user.get("name", ""), link))
+
+    return {"message": "If that email is registered, a password reset link has been sent."}
+
+@api_router.post("/auth/reset-password")
+async def reset_password(payload: ResetPasswordRequest):
+    token_hash = hash_token(payload.token)
+    reset_doc = await db.password_resets.find_one({"token_hash": token_hash, "used": False})
+    if not reset_doc or reset_doc["expires_at"] < datetime.now(timezone.utc):
+        raise HTTPException(status_code=400, detail="This reset link is invalid or has expired. Request a new one.")
+
+    hashed = hash_password(payload.new_password)
+    await db.users.update_one({"_id": reset_doc["user_id"]}, {"$set": {"password_hash": hashed}})
+    await db.password_resets.update_one({"_id": reset_doc["_id"]}, {"$set": {"used": True}})
+    return {"message": "Password updated. You can now log in with your new password."}
+
+@api_router.post("/auth/verify-email")
+async def verify_email(payload: VerifyEmailRequest):
+    token_hash = hash_token(payload.token)
+    v_doc = await db.email_verifications.find_one({"token_hash": token_hash, "used": False})
+    if not v_doc or v_doc["expires_at"] < datetime.now(timezone.utc):
+        raise HTTPException(status_code=400, detail="This verification link is invalid or has expired.")
+
+    await db.users.update_one({"_id": v_doc["user_id"]}, {"$set": {"is_verified": True}})
+    await db.email_verifications.update_one({"_id": v_doc["_id"]}, {"$set": {"used": True}})
+    return {"message": "Email verified successfully."}
+
+@api_router.post("/auth/resend-verification")
+async def resend_verification(current_user: dict = Depends(get_current_user)):
+    if current_user.get("is_verified"):
+        return {"message": "Your email is already verified."}
+    await issue_email_verification(ObjectId(current_user["_id"]), current_user["email"], current_user.get("name", ""))
+    return {"message": "Verification email sent."}
 
 # Equipment Routes
 @api_router.get("/equipment")
